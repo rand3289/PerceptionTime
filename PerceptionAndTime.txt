@@ -1,0 +1,20 @@
+Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli". Author will refrain from providing these definitions for the benefit of their authors. I will simply provide a counter-example: a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However I hope no one will claim that the rock is alive or can perceive it's environment. 
+
+This simple misunderstanding is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described simply by when it happened as opposed to symbol A changing to symbol B in the state-oriented view.
+
+Before proceeding to explain how this relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". Plato describes objects being perceived as shadows without ever knowing their true form. Modern computers are prisoners in Plato's cave who see shadows of the real world. What are these shadows? They are numbers!  Numbers are projections of real world penomena onto a number line. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms. Computers can perceive the world in terms of forms by detecting them.  It is the only operation I am aware of that can be done on any form. They can not be measured, described as a symbol, or transmitted.  This is where AI steps in. Plato's forms are known as features. In other words a feature is a mechanism of perception.  Features can be detected by current models and even used in a generative mode to create  pictures.
+Are features the answer to perception? In many current models feature detection or absense is represented symbolically as 0 or 1. The problem with that is the "Symbol Grounding Problem".
+
+Symbol grounding problem should not be just a red flag for symbolic AI but a red brick wall. Connectionism is not doing much better. Current models of ANNs are also symbolic in nature.  Symbols 0 or 1 are used to communicate among neurons. (insert reference to paper "On time") In a biological neural network over two hundred neurotransmitters can be found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons. Connectionism which is based on high degree of connectivity does not address this variety of symbols processed by neurons in Biological NN.
+
+So what is the definition of perception? Perception is a detection of change
+described in terms of time.
+
+Implications:
+
+
+In the context of Artificial Neural Network (ANN), one might argue that hidden layers percieve their inputs just as external stimuli are prerceived. In this case messages passed between neurons are not important. What is important is that change in the internal state of the neuron is detected. This fact drastically influences the ANN models. 
+
+Beam robotics, liquid state machines.
+Aanalog computing is not symbolic in its nature.
+

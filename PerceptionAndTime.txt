@@ -84,3 +84,51 @@ Detection is a way of thinking about mechanism of perception.  One of it's form 
 Why consider detection mechanism? Assuming this model creates a framework for an exaustive search for rules of state modification. 
 Algorithm of changining state changes itself over time. Synapses change over time.  Habbituation gives us a hint that detection algorithm can also change over time. How does the environment influence the change mechanism? Why is there an inhibiting mechanism?  
 
+On the importance of time in physics, engineering and other sciences:
+In classical physics one wants to describe reality in terms of functions. For example in an experiment where a ball is moving left and right on a track the balls position is described as a function of time f(t). This description breaks down when something unaccouned for happens.  If the ball is picked up and later placed back on the track this can be defined as a discontinuity in f(t). This discontinuity can be described in terms of the time intervals.
+In Engineering proceses are often modeled by linear function on intervals of time. This function can even be fitted by linear regression. When linear approximation is used a time interval has to be defined.  This is similar to subsumption architecture in robotics where state machines describing non-linear behavior become valid during a period of time. Describing everything in a system in terms of time (perception/ internal representations /actions) fits well with techniques described above.
+
+######################## Paper Structure ##################
+
+Introduction:
+Artificial Intelligence is an emergent behavior of several mechanisms including perception, memory, etc...
+<Perception is...>
+<rock example here>
+
+Philosophy:
+<shapes detected (plato)>
+Change in temperature freezes the lake not the cold itself.
+Best answer is always now!
+
+Neurology:
+Biological NNs... neurons detect shapes.
+<line 105 in ai.txt>
+Sensory and hidden layer neurons functionality are the same.
+<Muscle twitch>
+Adaptation indicates detection thresholds are not constant.  On the other hand pain neuronal pathways are not learned and do not degrade over time.<citation wikipedia???>
+
+AI / Machine Learning:
+Features detect shapes
+Symbolic world representation leads to symbol grounding problem.
+<Rosenblat - perceptron>
+<LSTM>
+
+Mathematics:
+<Measure>
+<Numbers are shadows>
+<5" vs 5 centimeters>
+
+Statistics:
+Perception mechanism bridges observation of random processes (random variables dependent on time) and statistical experiments.  Detection triggers the start of a new experiment. as well as defines it (feature binding concept helps define the boundaries of experiment (set of random variables) Detection described in terms of point processes form a set of possible outcomes.
+* Embodyment allows changing the experiment
+* Relative frequncy of occurence of event is a measure of the probability. <reference wikipedia ???>
+
+DSP:
+How do you turn continuous into discrete? Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of the change or amplitude of the signal at time (t). As sensitivity of the detector increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in one bit audio <???> encoding.
+
+Conclusion:
+The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, study of coupled oscillators and point processes.  It is just as important to revisit and recosider classic reasearch with this new outlook on perception to find what was missed and correct assumptions.
+
+
+< Conclusion or introduction ??? >
+This paper's goal is to underline the importance of studying time askpects of computational mechanisms. For example modeling synapses as oscillators or processes instead of weights.

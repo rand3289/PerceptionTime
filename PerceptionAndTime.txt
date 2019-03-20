@@ -123,8 +123,12 @@ Perception mechanism bridges observation of random processes (random variables d
 * Embodyment allows changing the experiment
 * Relative frequncy of occurence of event is a measure of the probability. <reference wikipedia ???>
 
+Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations. Only data produced during identical time intervals can be combined.  This data will exibit correlation without causality. Causality on the other side will express itself as correlation in data from different time intervals. To avoid inverse error one needs to specify that correlation of data from different time intervals does not imply causality. Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. In order to reason this way one needs to establish these time intervals. This is much easier to do when all information is expressed in terms of time instances.
+
 DSP:
 How do you turn continuous into discrete? Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of the change or amplitude of the signal at time (t). As sensitivity of the detector increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in one bit audio <???> encoding.
+
+Sampling at a random frequency does not guarantee to exceed Nyquist frequency. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor capable of sampling brightness 100 times per second might produce 8,640,000 samples in a day. This is excessive if the goal is to figure out if it is night or day.
 
 Conclusion:
 The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, study of coupled oscillators and point processes.  It is just as important to revisit and recosider classic reasearch with this new outlook on perception to find what was missed and correct assumptions.

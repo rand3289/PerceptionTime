@@ -4,17 +4,22 @@ toandrey@yahoo.com
 February 18, 2019
 
 Summary:
-Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.
+<REVISE>Artificial intelligence is an emergent property attributed to entities posessing certain mechanisms such as perception, short and long term memory, ability to learn or forget, habbituation, attention, 
+
+
+Intelligence is an emergent behavior of several mechanisms including perception, memory, etc... Perception is the most important of them since organisms such as bacteria lacking some other mechanisms can still exibit complex behavior.  Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications. The goal is to underline the importance of studying time aspects of computational mechanisms. For example modeling synapses as oscillators or processes instead of weights.
+
 
 Introduction:
-Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli". Author will refrain from providing references to these definitions. I will simply provide a counter-example: a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However I hope no one will claim that the rock is alive or can perceive it's environment.
+Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  A better description takes time into account lets say by including patterns of temporal-spacial neural activations.  Author will refrain from providing references to these definitions. I will simply provide a counter-example: a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However I hope no one will claim that the rock is alive or can perceive it's environment.
 On the other hand inside a neuron a different process takes place. Neuron's state (it's membrane potential) is changed by external stimuli. External stimula constitutes sensory stimula or other neurons firing. When membrane potential reaches a certain voltage level it is detected and neuron fires.
 
 Misunderstanding that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it happened as opposed to <REWISE> a symbol changing from A to B in the state-oriented view. In this case symbol can represent any property or quantity.
 
+Perception in philosophy:
 Before proceeding to explain how this relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". Plato describes objects being perceived as shadows without ever knowing their true form. Modern computers are prisoners in Plato's cave who see shadows of the real world. What are these shadows? They are numbers!  Numbers are projections of real world penomena onto an axis. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms. Computers can perceive the world in terms of forms by detecting them.  Forms can not be measured, described as a symbol, or transmitted.  In the field of Artificial Intelligence, plato's forms are known as features.  A feature is a mechanism of perception.  Features can be detected by current models and even used in a generative mode to create  pictures.
 
-Zeros and Ones used in ANNs are not symbols. They are flags that signify <belonging> to a time period.  There are problems with this way of representing time. Some of them are described in "<CHANGE> On Time" paper.  However the important thing is to understand they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
+Zeros and Ones used in ANNs are not symbols. They are flags that signify <belonging> to a time period.  There are problems with this way of representing time. Some of them are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  However the important thing is to understand they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
 
 Connectionism does not explain this. In addition it does not explain <insert reference to many neuro transmitters>
 
@@ -28,43 +33,25 @@ These mechanisms are important but are not common to all types of cells.
 The common principle is the detection of internal state change.
 
 
+
 Implications:
 
 In the context of Artificial Neural Network (ANN), one might argue that hidden layers percieve their inputs just as external stimuli are prerceived. In this case messages passed between neurons are not important. What is important is that change in the internal state of the neuron is detected. This fact drastically influences the ANN models. 
 
-Beam robotics, liquid state machines.
-Aanalog computing is not symbolic in its nature.
-
-Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
 LSTM is successful by implementing a clever timing mechanism.
 
-Embodyment might be the whole reason for having a brain.
-Importance of embodyment can be explained in terms of statistics: embodyment allows one to change the experiment instead of just observing it. Bertrand paradox Method of selection/realization/observation influences the distribution of the random variable.
+Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
 
-Artificial intelligence is an emergent property attributed to entities posessing certain mechanisms such as perception, short and long term memory, ability to learn or forget, habbituation, attention, 
-
-What action should I perform right now? vs Should I perform a specific action right now?
-Both approarches try to answer what the sequence of actions should be.
-
-Now is the best answer. All information available up to now has been considered.
+Beam robotics, liquid state machines.
+Aanalog computing is not symbolic in its nature.
 
 Once the mechanism of perception is accepted, one can argue about the mechanisms of state change. Wether they require inhibition. If synapses should be modeled as weights or oscillators.
 
 
-Statistics:
-In statistics perception runs statistical experiments.  It allows one to go from observing random processes in real world to producing results of an experiment. Every time a change is detected, it produces an outcome in an experiment.
-
-Imagine you are observing a toss of a fair coin in the air. There are several random processes that can be observed for example:
-f(t) is the height of the coin in inches
-g(t) is the hight of the coin in meters
-h(t) is the angle of the coin relative to horizon in degrees
-how does one create an experiment to check if the coin is fair? First one needs to pick values of the random processes that define an outcome of the experiment. Lets say f(t) = 0, g(t) = 0 and h(t) = 0.  In addition one needs to pick times t1, t2, t3, etc at which these random variables are realized.
-
-
 ################ from another file #############
 
-a better description takes time into account by including patterns of temporal-spacial neural activation.
 
+Perception in Artificial Intelligence:
 First memorable mention of perception in AI has to be attributed to Frank Rosenblatt.  In his 1957 paper "The Perceptron A receiving and recognizing automaton" he puts perception first in the list of "human-like functions". He also references Platos' forms. "the form of a man seen from any angle" However this reference has been greatly overlooked along with his mention of inhibiting connections not included in the current perceptron definition. He writes about his "Sensory System" which we now call the input layer "any connection may be negative (tending to inhibit)". In addition Rosenblatt emphasises importance of time by dividing perceptrons in two categories: "momentary stimulus perceptrons and temporal pattern perceptrons".
 
 Where as Rosenblatt wanted his perceptrons to detect the forms, now days we have a more generic word for mechanisms of perception to detect forms.  They are called features.
@@ -90,15 +77,14 @@ In Engineering proceses are often modeled by linear function on intervals of tim
 
 ######################## Paper Structure ##################
 
-Introduction:
-Artificial Intelligence is an emergent behavior of several mechanisms including perception, memory, etc...
-<Perception is...>
-<rock example here>
-
 Philosophy:
 <shapes detected (plato)>
 Change in temperature freezes the lake not the cold itself.
-Best answer is always now!
+
+Now is the best answer. All information available up to now has been considered.
+What action should I perform right now? vs Should I perform a specific action right now?
+Both approarches try to answer what the sequence of actions should be.
+
 
 Neurology:
 Biological NNs... neurons detect shapes.
@@ -117,22 +103,34 @@ Mathematics:
 <Measure>
 <Numbers are shadows>
 <5" vs 5 centimeters>
+#####################################################################################################
 
 Statistics:
+In statistics mechanism of perception can be used to runs statistical experiments.  It allows one to go from observing random processes in real world to producing results of an experiment. Every time a change is detected, it produces an outcome in an experiment.
+
+Imagine you are observing a toss of a fair coin in the air. There are several random processes that can be observed for example:
+f(t) is the height of the coin in inches
+g(t) is the hight of the coin in meters
+h(t) is the angle of the coin relative to horizon in degrees
+how does one create an experiment to check if the coin is fair? First one needs to pick values of the random processes that define an outcome of the experiment. Lets say f(t) = 0, g(t) = 0 and h(t) = 0.  In addition one needs to pick times t1, t2, t3, etc at which these random variables are realized.
+
+<REVISE>
+Embodyment helps modify the experiment...
+<move to Neurology ???>Embodyment might be the whole reason for having a brain. 
+Importance of embodyment can be explained in terms of statistics: embodyment allows one to change the experiment instead of just observing it. Bertrand paradox Method of selection/realization/observation influences the distribution of the random variable.
+
 Perception mechanism bridges observation of random processes (random variables dependent on time) and statistical experiments.  Detection triggers the start of a new experiment. as well as defines it (feature binding concept helps define the boundaries of experiment (set of random variables) Detection described in terms of point processes form a set of possible outcomes.
 * Embodyment allows changing the experiment
 * Relative frequncy of occurence of event is a measure of the probability. <reference wikipedia ???>
 
 Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations. Only data produced during identical time intervals can be combined.  This data will exibit correlation without causality. Causality on the other side will express itself as correlation in data from different time intervals. To avoid inverse error one needs to specify that correlation of data from different time intervals does not imply causality. Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. In order to reason this way one needs to establish these time intervals. This is much easier to do when all information is expressed in terms of time instances.
 
+
 DSP:
 How do you turn continuous into discrete? Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of the change or amplitude of the signal at time (t). As sensitivity of the detector increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in one bit audio <???> encoding.
 
 Sampling at a random frequency does not guarantee to exceed Nyquist frequency. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor capable of sampling brightness 100 times per second might produce 8,640,000 samples in a day. This is excessive if the goal is to figure out if it is night or day.
 
+
 Conclusion:
 The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, study of coupled oscillators and point processes.  It is just as important to revisit and recosider classic reasearch with this new outlook on perception to find what was missed and correct assumptions.
-
-
-< Conclusion or introduction ??? >
-This paper's goal is to underline the importance of studying time askpects of computational mechanisms. For example modeling synapses as oscillators or processes instead of weights.

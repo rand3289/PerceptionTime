@@ -18,13 +18,30 @@ Misunderstanding that state can describe perception is a result of the state-ori
 
 
 Perception in philosophy:
-Before proceeding to explain how this relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". Plato describes objects being perceived as shadows without ever knowing their true form.
+Before proceeding to explain how perception relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". Plato describes objects being perceived as shadows without ever knowing their true form.  He also adds that a true philosopher thinks in terms of forms.
 
-[DELETE Modern computers are prisoners in Plato's cave who see shadows of the real world. What are these shadows? They are numbers!  ]
+Philosophy ADD:
+Change in temperature freezes the lake not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. Only the change in temperature can describe that the state of the lake is changing. 
+Now is the best answer. All information available up to now has been considered.
+What action should I perform right now? vs Should I perform a specific action right now?  Both approarches try to answer what the sequence of actions should be.
 
-Numbers are projections of real world penomena onto an axis. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  In the field of Artificial Intelligence, plato's forms are known as features.  A feature is a mechanism of perception.  Features can be detected by current models and even used in a generative mode to create  pictures.
 
 
+Mathematics:
+<ELABORATE ON MEASURE???>
+Numbers are projections of real world penomena onto an axis. They are shadows. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which can not be expressed symbolicaly.  Qualia is perception of a form.
+
+<5" vs 5 centimeters> < 20 vs 68 no diff. Celsius vs centigrate>
+
+
+Perception in Artificial Intelligence:
+First memorable mention of perception in AI has to be attributed to Frank Rosenblatt.  In his 1957 paper "The Perceptron A receiving and recognizing automaton" he puts perception first in the list of "human-like functions". He also references Platos' forms. "the form of a man seen from any angle" However this reference has been greatly overlooked along with his mention of inhibiting connections not included in the current perceptron definition. He writes about his "Sensory System" which we now call the input layer "any connection may be negative (tending to inhibit)". In addition Rosenblatt emphasises importance of time by dividing perceptrons in two categories: "momentary stimulus perceptrons and temporal pattern perceptrons".
+
+Where as Rosenblatt wanted his perceptrons to detect the forms, now days we have a more generic word for mechanisms of perception to detect forms.  They are called features.  A feature is a mechanism of perception.  Features can be detected by current models and even used in a generative mode to create  pictures.
+
+Feature is an accidental discovery.  It's importance as a mechanism of perception that can make real world observations in terms of time is not well known.  <REWISE> For example, success of LSTM algorithm can be attributed to implementing a clever timing mechanism.  This mechanism allows procesing of stimuli from different time periods.  Instead of making researchers concentrate on the time aspect of the computational models, this hack gained wide acceptance as-is.   Another big problem is if you train any supervised learning algorithm to give you a prediction one day in the future, it will not be able to predict what happens in an hour. This fact itself is counterintuitive. At first it might appear that making an algorithm an on-line learning algorithm might solve the problem.
+<ADD from PHONE AI.txt "turn based games">
+There are two types of AI: a static world, turn based and dynamic world AI.  In a dynamic world a process or processes are observer. Time is a fundamental description of the perceived state of the process (signals). In static world AI, a system is presented with data without a time component.  Such as in turn-based games, pattern recognition etc. Static world AI can be tricked to perform on dynamic world problems by sying take turn every few milliseconds or run every time a sensor is read. This approach can be used in robotics.
 
 
 Zeros and Ones used in ANNs are not symbols. They are flags that signify <belonging> to a time period.  There are problems with this way of representing time. Some of them are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  However the important thing is to understand they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
@@ -33,7 +50,7 @@ Connectionism does not explain this. In addition it does not explain <insert ref
 
 Are features the answer to perception? In many current models feature detection or absense is represented symbolically as 0 or 1. The problem with that is the "Symbol Grounding Problem".
 
-Symbol grounding problem should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in it's computation model. <DELETE?> Current models of ANNs are also symbolic in nature.  Symbols 0 or 1 are used to "communicate" among neurons.  
+Symbol grounding problem should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in it's computation model. <DELETE?> Some researchers think about current models of ANNs as symbolic in nature.  Symbols 0 or 1 are used to "communicate" among neurons.  
 
 Aanalog computing is not symbolic in its nature.
 
@@ -56,16 +73,7 @@ Once the mechanism of perception is accepted, one can argue about the mechanisms
 
 In the context of Artificial Neural Network (ANN), one might argue that hidden layers percieve their inputs just as external stimuli are prerceived. In this case messages passed between neurons are not important. What is important is that change in the internal state of the neuron is detected. This fact drastically influences the ANN models. 
 
-
-
 ######################################################################
-
-Perception in Artificial Intelligence:
-First memorable mention of perception in AI has to be attributed to Frank Rosenblatt.  In his 1957 paper "The Perceptron A receiving and recognizing automaton" he puts perception first in the list of "human-like functions". He also references Platos' forms. "the form of a man seen from any angle" However this reference has been greatly overlooked along with his mention of inhibiting connections not included in the current perceptron definition. He writes about his "Sensory System" which we now call the input layer "any connection may be negative (tending to inhibit)". In addition Rosenblatt emphasises importance of time by dividing perceptrons in two categories: "momentary stimulus perceptrons and temporal pattern perceptrons".
-
-Where as Rosenblatt wanted his perceptrons to detect the forms, now days we have a more generic word for mechanisms of perception to detect forms.  They are called features.
-
-Talk about qualia
 
 Why detection? What is wrong with measuring? Measurement is a projection of a real world phenomenon onto a number line.  A shadow. Although a measure might have a meaning for a single observer, it is meaningless to another observer unless units are agreed upon.  It is easier to understand perception through a mechanism where the first observer changes second observer's state without agreeing on units than transfering information in terms of numbers.  Unless one can come up with a mechanism how two observers agree on the units.
 
@@ -80,20 +88,18 @@ Detection is a way of thinking about mechanism of perception.  One of it's form 
 Why consider detection mechanism? Assuming this model creates a framework for an exaustive search for rules of state modification. 
 Algorithm of changining state changes itself over time. Synapses change over time.  Habbituation gives us a hint that detection algorithm can also change over time. How does the environment influence the change mechanism? Why is there an inhibiting mechanism?  
 
-
-
+#######################################################################
 
 On the importance of time in physics, engineering and other sciences:
 In classical physics one wants to describe reality in terms of functions. For example in an experiment where a ball is moving left and right on a track the balls position is described as a function of time f(t). This description breaks down when something unaccouned for happens.  If the ball is picked up and later placed back on the track this can be defined as a discontinuity in f(t). This discontinuity can be described in terms of the time intervals.
 In Engineering proceses are often modeled by linear function on intervals of time. This function can even be fitted by linear regression. When linear approximation is used a time interval has to be defined.  This is similar to subsumption architecture in robotics where state machines describing non-linear behavior become valid during a period of time. Describing everything in a system in terms of time (perception/ internal representations /actions) fits well with techniques described above.
 
-#######################################################################
 
 Digital Signal Processing:
 How do you turn continuous into discrete? Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of change.  As speed of an ADC converter increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in "One-bit Audio" encoding.
 <ADD - continue the point>
 
-Sampling at a random frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor sampling brightness 100 times per second produces 8,640,000 samples in 24 hours. This is excessive if the goal is to figure out if it is night or day. Given noise is not a problem, detecting changes produces the optimal sample rate to capture the signal.
+Sampling a random process at an arbitrary frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor sampling brightness 100 times per second produces 8,640,000 samples in 24 hours. This is excessive if the goal is to figure out if it is night or day. Given noise is not a problem, detecting changes produces the optimal sample rate to capture the signal.
 
 
 Statistics:
@@ -119,22 +125,3 @@ Data without a time component produces combinatorial explosion. Having time redu
 
 Conclusion:
 The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, study of coupled oscillators and point processes.  It is just as important to revisit and recosider classic reasearch with this new outlook on perception to find what was missed and correct assumptions.
-
-
-
-######################## Paper Structure ##################
-
-Philosophy ADD:
-Change in temperature freezes the lake not the cold itself.
-
-Now is the best answer. All information available up to now has been considered.
-What action should I perform right now? vs Should I perform a specific action right now?  Both approarches try to answer what the sequence of actions should be.
-
-AI / Machine Learning:
-LSTM is successful by implementing a clever timing mechanism.
-LSTM's success can be attributed to implementing a clever timing mechanism.
-
-Mathematics:
-<Measure>
-<Numbers are shadows>
-<5" vs 5 centimeters> < 20 vs 68 no diff. Celsius vs centigrate>

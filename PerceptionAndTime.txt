@@ -16,8 +16,13 @@ On the other hand inside a neuron a different process takes place. Neuron's stat
 
 Misunderstanding that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it happened as opposed to <REWISE> a symbol changing from A to B in the state-oriented view. In this case symbol can represent any property or quantity.
 
+
 Perception in philosophy:
-Before proceeding to explain how this relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". Plato describes objects being perceived as shadows without ever knowing their true form. Modern computers are prisoners in Plato's cave who see shadows of the real world. What are these shadows? They are numbers!  Numbers are projections of real world penomena onto an axis. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms. Computers can perceive the world in terms of forms by detecting them.  Forms can not be measured, described as a symbol, or transmitted.  In the field of Artificial Intelligence, plato's forms are known as features.  A feature is a mechanism of perception.  Features can be detected by current models and even used in a generative mode to create  pictures.
+Before proceeding to explain how this relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". Plato describes objects being perceived as shadows without ever knowing their true form.
+
+[DELETE Modern computers are prisoners in Plato's cave who see shadows of the real world. What are these shadows? They are numbers!  ]
+
+Numbers are projections of real world penomena onto an axis. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  In the field of Artificial Intelligence, plato's forms are known as features.  A feature is a mechanism of perception.  Features can be detected by current models and even used in a generative mode to create  pictures.
 
 Zeros and Ones used in ANNs are not symbols. They are flags that signify <belonging> to a time period.  There are problems with this way of representing time. Some of them are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  However the important thing is to understand they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
 
@@ -28,16 +33,17 @@ Are features the answer to perception? In many current models feature detection 
 Symbol grounding problem should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in it's computation model. <DELETE?> Current models of ANNs are also symbolic in nature.  Symbols 0 or 1 are used to "communicate" among neurons.  
 This has been addressed previously (insert reference to paper "On time") 
 
+
 In a biological neural network over two hundred neurotransmitters can be found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons. Connectionism does not address this variety of symbols processed by biological neurons. Mechanisms of changing internal state of a neuron are many and variable. Neuron's membrane potential can be changed via photons, chemical, electrical or mechanical means.  
 These mechanisms are important but are not common to all types of cells.
 The common principle is the detection of internal state change.
 
 
-
-Implications:
-
 In the context of Artificial Neural Network (ANN), one might argue that hidden layers percieve their inputs just as external stimuli are prerceived. In this case messages passed between neurons are not important. What is important is that change in the internal state of the neuron is detected. This fact drastically influences the ANN models. 
 
+
+
+############################################################################################
 LSTM is successful by implementing a clever timing mechanism.
 
 Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
@@ -46,9 +52,7 @@ Beam robotics, liquid state machines.
 Aanalog computing is not symbolic in its nature.
 
 Once the mechanism of perception is accepted, one can argue about the mechanisms of state change. Wether they require inhibition. If synapses should be modeled as weights or oscillators.
-
-
-################ from another file #############
+##############################################################################################
 
 
 Perception in Artificial Intelligence:
@@ -71,19 +75,20 @@ Detection is a way of thinking about mechanism of perception.  One of it's form 
 Why consider detection mechanism? Assuming this model creates a framework for an exaustive search for rules of state modification. 
 Algorithm of changining state changes itself over time. Synapses change over time.  Habbituation gives us a hint that detection algorithm can also change over time. How does the environment influence the change mechanism? Why is there an inhibiting mechanism?  
 
+
+
+
 On the importance of time in physics, engineering and other sciences:
 In classical physics one wants to describe reality in terms of functions. For example in an experiment where a ball is moving left and right on a track the balls position is described as a function of time f(t). This description breaks down when something unaccouned for happens.  If the ball is picked up and later placed back on the track this can be defined as a discontinuity in f(t). This discontinuity can be described in terms of the time intervals.
 In Engineering proceses are often modeled by linear function on intervals of time. This function can even be fitted by linear regression. When linear approximation is used a time interval has to be defined.  This is similar to subsumption architecture in robotics where state machines describing non-linear behavior become valid during a period of time. Describing everything in a system in terms of time (perception/ internal representations /actions) fits well with techniques described above.
 
 ######################## Paper Structure ##################
 
-Philosophy:
-<shapes detected (plato)>
+Philosophy ADD:
 Change in temperature freezes the lake not the cold itself.
 
 Now is the best answer. All information available up to now has been considered.
-What action should I perform right now? vs Should I perform a specific action right now?
-Both approarches try to answer what the sequence of actions should be.
+What action should I perform right now? vs Should I perform a specific action right now?  Both approarches try to answer what the sequence of actions should be.
 
 
 Neurology:
@@ -94,16 +99,12 @@ Sensory and hidden layer neurons functionality are the same.
 Adaptation indicates detection thresholds are not constant.  On the other hand pain neuronal pathways are not learned and do not degrade over time.<citation wikipedia???>
 
 AI / Machine Learning:
-Features detect shapes
-Symbolic world representation leads to symbol grounding problem.
-<Rosenblat - perceptron>
-<LSTM>
 
 Mathematics:
 <Measure>
 <Numbers are shadows>
 <5" vs 5 centimeters>
-#####################################################################################################
+#######################################################################
 
 Statistics:
 In statistics mechanism of perception can be used to runs statistical experiments.  It allows one to go from observing random processes in real world to producing results of an experiment. Every time a change is detected, it produces an outcome in an experiment.
@@ -127,9 +128,10 @@ Data without a time component produces combinatorial explosion. Having time redu
 
 
 DSP:
-How do you turn continuous into discrete? Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of the change or amplitude of the signal at time (t). As sensitivity of the detector increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in one bit audio <???> encoding.
+How do you turn continuous into discrete? Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of change.  As speed of an ADC converter increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in "One-bit Audio" encoding.
+<ADD - continue the point>
 
-Sampling at a random frequency does not guarantee to exceed Nyquist frequency. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor capable of sampling brightness 100 times per second might produce 8,640,000 samples in a day. This is excessive if the goal is to figure out if it is night or day.
+Sampling at a random frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor sampling brightness 100 times per second produces 8,640,000 samples in 24 hours. This is excessive if the goal is to figure out if it is night or day. Given noise is not a problem, detecting changes produces the optimal sample rate to capture the signal.
 
 
 Conclusion:

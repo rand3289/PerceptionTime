@@ -11,27 +11,37 @@ Intelligence is an emergent behavior of several mechanisms including perception,
 
 
 Introduction:
-Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  A better description takes time into account lets say by including patterns of temporal-spacial neural activations.  Author will refrain from providing references to these definitions. I will simply provide a counter-example: a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However I hope no one will claim that the rock is alive or can perceive it's environment.
-On the other hand inside a neuron a different process takes place. Neuron's state (it's membrane potential) is changed by external stimuli. External stimula constitutes sensory stimula or other neurons firing. When membrane potential reaches a certain voltage level it is detected and neuron fires.
+Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  A better description takes time into account lets say by including patterns of temporal-spacial neural activations.  Author will refrain from providing references to these definitions. I will simply provide a counter-example: a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However I hope no one will claim that the rock can perceive it's environment.  If you believe that the rock example is irrelevant, just remember that a CCD sensor's wafer is made of silica.
+On the other hand inside a neuron a different process takes place. Neuron's state (it's membrane potential) is changed by external stimuli. External stimula constitutes sensory stimula or other neurons firing.  When membrane potential reaches a certain voltage level it is detected and neuron fires.
 
 Misunderstanding that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it happened as opposed to <REWISE> a symbol changing from A to B in the state-oriented view. In this case symbol can represent any property or quantity.
 
 
 Perception in philosophy:
-Before proceeding to explain how perception relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". Plato describes objects being perceived as shadows without ever knowing their true form.  He also adds that a true philosopher thinks in terms of forms.
+Before proceeding to explain how perception relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". The theory is about 1500 years old and withstood the test of time.  Plato describes objects being perceived as shadows without ever knowing their true form.  He also adds that a true philosopher thinks in terms of forms.
 
-Philosophy ADD:
+<ADD TRANSITION>
 Change in temperature freezes the lake not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. Only the change in temperature can describe that the state of the lake is changing. 
 Now is the best answer. All information available up to now has been considered.
 What action should I perform right now? vs Should I perform a specific action right now?  Both approarches try to answer what the sequence of actions should be.
 
 
 
-Mathematics:
-<ELABORATE ON MEASURE???>
+Measuring and numbers:
+What is the difference between 20 and 68?  None, because 20 degrees Celsius is 68 degrees Fahrenheit.  Is five equals five? No, because five inches are longer than five centimeters.  Values are meaningless without units.  Talking about units leads to the problem of Qualia.
+
+On the other hand there is a problem of comparing apples to oranges.  If the units do not match, things can not be related.
+
+Values are measures of an object's state from an absolute reference point such as zero.  The reference point and scale usually have nothing to do with the object whos properties are measured.  They are qualities of an observer.  Values can also measure a change in an object's state or the rate of change.  
+
+Any observer cannot directly measure the state of an object such as its color or temperature.  It can only observe changes. [REFERENCES?]  A photon arriving at the retina, hair deflecting in a cochlea, tactile input, molecule locking into a receptor in the nose, they are all events occuring in the sensor's environment.  When we are looking at observations expressed in terms of values we are frequently looking at the number of events per unit of time.  Ironically Quantification, a concept that has to give meaning to observation is the reason observations lose their grounding.[2] 
+
+Measuring the state of the environment produces symbols frequently expressed as numbers in digital systems.  
+
 Numbers are projections of real world penomena onto an axis. They are shadows. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which can not be expressed symbolicaly.  Qualia is perception of a form.
 
-<5" vs 5 centimeters> < 20 vs 68 no diff. Celsius vs centigrate>
+<TIE in>
+Time instance is the smallest quanta of information yet since time is continuous its resolution is limited only by an observer's precision.
 
 
 Perception in Artificial Intelligence:
@@ -63,6 +73,9 @@ Sensory and hidden layer neurons functionality are the same.
 Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
 <Muscle twitch>
 Adaptation indicates detection thresholds are not constant.  On the other hand pain neuronal pathways are not learned and do not degrade over time.<citation wikipedia???>
+
+Every voluntary answer your brain gives to any question is expressed in terms of the NOW symbol because it involves muscle movement.[3]  A muscle fiber only needs to know if it has to contract right NOW.  Biology dictates that the only correct question is "when should I twitch that muscle fiber?" and the answer is always now.  
+<DELETE?  Now is also the best answer because all information available before now is taken into account.>
 
 In a biological neural network over two hundred neurotransmitters can be found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons. Connectionism does not address this variety of symbols processed by biological neurons. Mechanisms of changing internal state of a neuron are many and variable. Neuron's membrane potential can be changed via photons, chemical, electrical or mechanical means.  
 These mechanisms are important but are not common to all types of cells.
@@ -101,6 +114,8 @@ How do you turn continuous into discrete? Sample it at even time intervals to pr
 
 Sampling a random process at an arbitrary frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor sampling brightness 100 times per second produces 8,640,000 samples in 24 hours. This is excessive if the goal is to figure out if it is night or day. Given noise is not a problem, detecting changes produces the optimal sample rate to capture the signal.
 
+Observing the signal via multiple observers that detect changes instead of sampling is a better model that uses the mechanism of perception.
+
 
 Statistics:
 In statistics mechanism of perception can be used to runs statistical experiments.  It allows one to go from observing random processes in real world to producing results of an experiment. Every time a change is detected, it produces an outcome in an experiment.
@@ -119,9 +134,18 @@ Importance of embodyment can be explained in terms of statistics: embodyment all
 Perception mechanism bridges observation of random processes (random variables dependent on time) and statistical experiments.  Detection triggers the start of a new experiment. as well as defines it (feature binding concept helps define the boundaries of experiment (set of random variables) Detection described in terms of point processes form a set of possible outcomes.
 * Embodyment allows changing the experiment
 * Relative frequncy of occurence of event is a measure of the probability. <reference wikipedia ???>
+* The advantage of using a point process is that a single random variable describing the frequency of the events is defined apriori.
 
 Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations. Only data produced during identical time intervals can be combined.  This data will exibit correlation without causality. Causality on the other side will express itself as correlation in data from different time intervals. To avoid inverse error one needs to specify that correlation of data from different time intervals does not imply causality. Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. In order to reason this way one needs to establish these time intervals. This is much easier to do when all information is expressed in terms of time instances.
 
 
 Conclusion:
 The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, study of coupled oscillators and point processes.  It is just as important to revisit and recosider classic reasearch with this new outlook on perception to find what was missed and correct assumptions.
+
+
+References:
+[1] https://en.wikipedia.org/wiki/Symbol_grounding_problem
+[2] https://en.wikipedia.org/wiki/Quantification_(science)
+[3] https://www.ted.com/talks/daniel_wolpert_the_real_reason_for_brains
+[4] https://en.wikipedia.org/wiki/Point_process
+perceptron

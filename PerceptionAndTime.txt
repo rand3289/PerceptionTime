@@ -5,7 +5,12 @@ March 24, 2019
 
 
 Summary:
-Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, reflexes, actuation.  Perception is considered one of the most important by many researchers.[1][2]
+Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, prediction, reflexes, actuation.  Perception is considered one of the most important by many researchers.[1][2]
+
+In traditional computer systems data is aquired processed and after all interpreted or percieved by humans through output devices. When building AGI our goal is to move this perception boundary inside the system.
+
+<USE OR DELETE???>
+In general computing the output results are symbols which are perceived and interpreted by a human or assigned certain actions by a designer of the system.
 
 Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.  For example above definition makes it possible to think about observer as a process not an object.  Another goal is to underline the importance of studying time aspects of computational mechanisms.  For example modeling synapses as oscillators or processes instead of weights.
 
@@ -29,7 +34,7 @@ Change in temperature freezes the lake not the cold itself.  The fact that it's 
 <ADD>
 Brightness of a pixel (red 34) VS one pixel brighter than the other (A>B). Which carries more information?
 
-Now is the best answer. All information available up to now has been considered.
+Now is the best answer.  All information available before now is taken into account.
 What action should I perform right now? vs Should I perform a specific action right now?  Both approarches try to answer what the sequence of actions should be.
 
 
@@ -64,6 +69,9 @@ There are two types of AI: a static world, turn based and dynamic world AI.  In 
 
 Zeros and Ones used in ANNs are not symbols. They are flags that signify <belonging> to a time period.  There are problems with this way of representing time. Some of them are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  However the important thing is to understand they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
 
+<ADD or DELETE???>
+Such as buffering of signal to present samples from different times in a parallel manner.
+
 <EDIT>
 Connectionism does not explain this. In addition it does not explain <insert reference to many neuro transmitters>
 connectivism does not specify that functionally Sensory neurons are the same as internal neurons they are both detectors
@@ -77,15 +85,15 @@ Aanalog computing is not symbolic in its nature.
 
 
 Neurology:
-Biological NNs... neurons detect shapes.
-<line 105 in ai.txt>
+Biological NNs... neurons detect Plato's shapes.
+
 Sensory and hidden layer neurons functionality are the same.
+
 Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
-<Muscle twitch>
+
 Adaptation indicates detection thresholds are not constant.  On the other hand pain neuronal pathways are not learned and do not degrade over time.<citation wikipedia???>
 
 Every voluntary answer your brain gives to any question is expressed in terms of the NOW symbol because it involves muscle movement.[3]  A muscle fiber only needs to know if it has to contract right NOW.  Biology dictates that the only correct question is "when should I twitch that muscle fiber?" and the answer is always now.  
-<DELETE?  Now is also the best answer because all information available before now is taken into account.>
 
 In a biological neural network over two hundred neurotransmitters can be found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons. Connectionism does not address this variety of symbols processed by biological neurons. Mechanisms of changing internal state of a neuron are many and variable. Neuron's membrane potential can be changed via photons, chemical, electrical or mechanical means.  
 These mechanisms are important but are not common to all types of cells.
@@ -173,3 +181,8 @@ Detecting a change is much more precise in time than sampling.  While sampling, 
 Detection model does not suffer from undersampling below Nyquist's frequency. Although some events will appear as if they occured in an instant.
 
 Observer1 detects a change in one unit. Observer2 detects a change in two units and so on.
+
+My speculation is that algorithms required to build an Intelligent system using ANNs would describe (A) how an individual neuron operates (B) how neurons interconnect into groups such as cortical columns (C) how these groups are connected to each other, which might be a genetic algorithm. 
+
+Compare apples to oranges:
+How about a "purple over here" and a "green over there"?  We have to have domain independent representation.  This need relates to concepts of symbol grounding and qualia.  Domain independent representation can be accomplished by representing everything in terms of time.

@@ -1,13 +1,13 @@
 Perception and time in Artificial Intelligence.
 Andrey Makushkin
 toandrey@yahoo.com
-February 18, 2019
+March 24, 2019
+
 
 Summary:
-<REVISE>Artificial intelligence is an emergent property attributed to entities posessing certain mechanisms such as perception, short and long term memory, ability to learn or forget, habbituation, attention, nerve terminal competition for synaptic space,
+Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, reflexes, actuation.  Perception is considered one of the most important by many researchers.[1][2]
 
-
-Intelligence is an emergent behavior of several mechanisms including perception, memory, etc... Perception is the most important of them since organisms such as bacteria lacking some other mechanisms can still exibit complex behavior.  Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications. The goal is to underline the importance of studying time aspects of computational mechanisms. For example modeling synapses as oscillators or processes instead of weights.
+Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.  For example above definition makes it possible to think about observer as a process not an object.  Another goal is to underline the importance of studying time aspects of computational mechanisms.  For example modeling synapses as oscillators or processes instead of weights.
 
 
 Introduction:
@@ -41,7 +41,7 @@ On the other hand there is a problem of comparing apples to oranges.  If the uni
 
 Values are measures of an object's state from an absolute reference point such as zero.  The reference point and scale usually have nothing to do with the object whos properties are measured.  They are qualities of an observer.  Values can also measure a change in an object's state or the rate of change.  
 
-Any observer cannot directly measure the state of an object such as its color or temperature.  It can only observe changes. [REFERENCES?]  A photon arriving at the retina, hair deflecting in a cochlea, tactile input, molecule locking into a receptor in the nose, they are all events occuring in the sensor's environment.  When we are looking at observations expressed in terms of values we are frequently looking at the number of events per unit of time.  Ironically Quantification, a concept that has to give meaning to observation is the reason observations lose their grounding.[2] 
+Any observer cannot directly measure the state of an object such as its color or temperature.  It can only observe changes. [REFERENCES?]  A photon arriving at the retina, hair deflecting in a cochlea, tactile input, molecule locking into a receptor in the nose, they are all events occuring in the sensor's environment.  When we are looking at observations expressed in terms of values we are frequently looking at the number of events per unit of time.  Ironically Quantification, a concept that has to give meaning to observation is the reason observations lose their grounding.[5] 
 
 Measuring the state of the environment produces symbols frequently expressed as numbers in digital systems. 
 <TIE in> It forms a symbolic world representation.
@@ -59,7 +59,7 @@ Where as Rosenblatt wanted his perceptrons to detect the forms, now days we have
 
 Feature is an accidental discovery.  It's importance as a mechanism of perception that can make real world observations in terms of time is not well known.  <REWISE> For example, success of LSTM algorithm can be attributed to implementing a clever timing mechanism.  This mechanism allows procesing of stimuli from different time periods.  Instead of making researchers concentrate on the time aspect of the computational models, this hack gained wide acceptance as-is.   Another big problem is if you train any supervised learning algorithm to give you a prediction one day in the future, it will not be able to predict what happens in an hour. This fact itself is counterintuitive. At first it might appear that making an algorithm an on-line learning algorithm might solve the problem.
 <ADD from PHONE AI.txt "turn based games">
-There are two types of AI: a static world, turn based and dynamic world AI.  In a dynamic world a process or processes are observer. Time is a fundamental description of the perceived state of the process (signals). In static world AI, a system is presented with data without a time component.  Such as in turn-based games, pattern recognition etc. Static world AI can be tricked to perform on dynamic world problems by sying take turn every few milliseconds or run every time a sensor is read. This approach can be used in robotics.
+There are two types of AI: a static world, turn based and dynamic world AI.  In a dynamic world a process or processes are observed. Time is a fundamental description of the perceived state of the process (signals). In static world AI, a system is presented with data without a time component.  Such as in turn-based games, pattern recognition etc. Static world AI can be tricked to perform on dynamic world problems by sying take turn every few milliseconds or run every time a sensor is read. This approach can be used in robotics.
 
 
 Zeros and Ones used in ANNs are not symbols. They are flags that signify <belonging> to a time period.  There are problems with this way of representing time. Some of them are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  However the important thing is to understand they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
@@ -114,7 +114,7 @@ Algorithm of changining state changes itself over time. Synapses change over tim
 #######################################################################
 
 On the importance of time in physics, engineering and other sciences:
-In classical physics one wants to describe reality in terms of functions. For example in an experiment where a ball is moving left and right on a track the balls position is described as a function of time f(t). This description breaks down when something unaccouned for happens.  If the ball is picked up and later placed back on the track this can be defined as a discontinuity in f(t). This discontinuity can be described in terms of the time intervals.
+In classical physics one wants to describe reality in terms of functions. For example in an experiment where a ball is moving left and right on a track the balls position is described as a function of time f(t). This description breaks down when something unaccouned for happens.  If the ball is picked up and later placed back on the track this can be defined as a discontinuity in f(t). This discontinuity can be described in terms of the time interval because math describes the world in an instance of time or as a function of time.
 In Engineering proceses are often modeled by linear function on intervals of time. This function can even be fitted by linear regression. When linear approximation is used a time interval has to be defined.  This is similar to subsumption architecture in robotics where state machines describing non-linear behavior become valid during a period of time. Describing everything in a system in terms of time (perception/ internal representations /actions) fits well with techniques described above.
 
 
@@ -136,9 +136,11 @@ g(t) is the hight of the coin in meters
 h(t) is the angle of the coin relative to horizon in degrees
 how does one create an experiment to check if the coin is fair? First one needs to pick values of the random processes that define an outcome of the experiment. Lets say f(t) = 0, g(t) = 0 and h(t) = 0.  In addition one needs to pick times t1, t2, t3, etc at which these random variables are realized.
 
-<REVISE>
-Embodyment helps modify the experiment...
 <move to Neurology ???>Embodyment might be the whole reason for having a brain. 
+<REVISE>
+Embodyment allows conducting experiments with small changes.
+A coin is laying on the road cars are passing by and push the coin around but it does not flip it appears that the coin always lays on one side. just observing it will give you a probability distribution where a coin always lands on one side.
+<EDIT>
 Importance of embodyment can be explained in terms of statistics: embodyment allows one to change the experiment instead of just observing it. Bertrand paradox Method of selection/realization/observation influences the distribution of the random variable.
 
 Perception mechanism bridges observation of random processes (random variables dependent on time) and statistical experiments.  Detection triggers the start of a new experiment. as well as defines it (feature binding concept helps define the boundaries of experiment (set of random variables) Detection described in terms of point processes form a set of possible outcomes.
@@ -154,8 +156,20 @@ The future directions of research aligned with my view on perception include neu
 
 
 References:
-[1] https://en.wikipedia.org/wiki/Symbol_grounding_problem
-[2] https://en.wikipedia.org/wiki/Quantification_(science)
+[1] Frank Rosenblat, The Perceptron, 1957
+[2] Stephen Wolfram, New Kind of Science,  chapter 10 "Perception"
 [3] https://www.ted.com/talks/daniel_wolpert_the_real_reason_for_brains
 [4] https://en.wikipedia.org/wiki/Point_process
-perceptron
+[5] https://en.wikipedia.org/wiki/Quantification_(science)
+[6] https://en.wikipedia.org/wiki/Symbol_grounding_problem
+<TODO: change ted and wikipedia links to paper links>
+
+
+
+#########################################
+Machine learning deals with data bypassing perception
+
+Detecting a change is much more precise in time than sampling.  While sampling, the change could occur anywhere within the time period.  Detecting a change will most of the time result in a constant delay.  So does propagation of the information about an event through the environment. For example thunder after lightning.
+Detection model does not suffer from undersampling below Nyquist's frequency. Although some events will appear as if they occured in an instant.
+
+Observer1 detects a change in one unit. Observer2 detects a change in two units and so on.

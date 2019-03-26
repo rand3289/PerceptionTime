@@ -1,25 +1,29 @@
-Perception and time in Artificial Intelligence.
+Perception and time in Artificial General Intelligence.
 Andrey Makushkin
 toandrey@yahoo.com
 March 24, 2019
 
 
 Summary:
-Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, prediction, reflexes, actuation.  Perception is considered one of the most important by many researchers.[1][2]
+In traditional computing data is aquired, processed and interpreted or percieved by humans through output devices.  If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by the system designer.  When building Artificial General Intelligence (AGI) our goal is to move this perception boundary inside the system.
 
-In traditional computer systems data is aquired processed and after all interpreted or percieved by humans through output devices. When building AGI our goal is to move this perception boundary inside the system.
-
-<EDIT or DELETE>
-In general computing the output results are symbols which are perceived and interpreted by a human or assigned certain actions by a designer of the system.
+<DELETE>
+Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, prediction, reflexes, actuation.  Perception is considered the most important mechanism by many researchers.[1][2]
+The idea is to define the perception mechanism and explain how it becomes part of the system.  
 
 Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.  For example above definition makes it possible to think about observer as a process not an object.  Another goal is to underline the importance of studying time aspects of computational mechanisms.  For example modeling synapses as oscillators or processes instead of weights.
 
 
 Introduction:
-Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  A better description takes time into account lets say by including patterns of temporal-spacial neural activations.  Author will refrain from providing references to these definitions. I will simply provide a counter-example: a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time.
-It can form dazzling patterns and crystalline structures. Reflects or absorbs light, conducts or insulates electric currents. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However taking all that complex behavior into account I hope no one will claim that the rock can perceive it's environment.  If you believe that the rock example is irrelevant, just remember that a CCD sensor's wafer is made of silica.
-On the other hand inside a neuron a different process takes place. Neuron's state (it's membrane potential) is changed by external stimuli. External stimula constitutes sensory stimula or other neurons firing.  When membrane potential reaches a certain voltage level it is detected and neuron fires. Average neuron threshold potential is about -55mv.
+Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  A better description takes time into account for example by including patterns of temporal-spacial neural activations.
 
+<DELETE>Author will refrain from providing references to these definitions. I will simply provide a counter-example: 
+<EDIT>
+a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time.
+It can form dazzling patterns and crystalline structures. Reflects or absorbs light, conducts or insulates electric currents. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However taking all that complex behavior into account I hope no one will claim that the rock can perceive it's environment.  If you believe that the rock example is irrelevant, just remember that a CCD sensor's wafer is made of silica.
+On the other hand inside a neuron a different process takes place. Neuron's state (it's membrane potential) is changed by external stimuli. External stimula constitutes sensory stimula or synaptic potential.  When membrane potential reaches a certain voltage level it is detected and neuron fires.  Since the process is cyclic in nature <EDIT stationary???>, the change is described by when it occured as opposed to how the state changed.  Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
+
+<DELETE or EDIT>
 Misunderstanding that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it happened as opposed to <EDIT> a symbol changing from A to B in the state-oriented view. In this case symbol can represent any property or quantity.
 
 
@@ -39,7 +43,7 @@ What action should I perform right now? vs Should I perform a specific action ri
 
 
 
-Measuring and numbers:
+Measuring and numbers: <EDIT unite into "Perception and measure" section?>
 What is the difference between 20 and 68?  None, because 20 degrees Celsius is 68 degrees Fahrenheit.  Is five equals five? No, because five inches are longer than five centimeters.  Values are meaningless without units.  Talking about units leads to the problem of Qualia.
 
 On the other hand there is a problem of comparing apples to oranges.  If the units do not match, things can not be related.
@@ -50,40 +54,34 @@ Any observer cannot directly measure the state of an object such as its color or
 
 Measuring the state of the environment produces symbols frequently expressed as numbers in digital systems. 
 <TIE in> It forms a symbolic world representation.
+<ADD> count of how many times a measuring stick fits.
 
-Numbers are projections of real world penomena onto an axis. They are shadows. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which can not be expressed symbolicaly.  Qualia is perception of a form.
+Numbers are projections of real world penomena onto an axis. They are Plato's shadows. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which can not be expressed symbolicaly.  Qualia is perception of a form.
 
 <TIE in>
 Time instance is the smallest quanta of information yet since time is continuous its resolution is limited only by an observer's precision.
 
 
 Perception in Artificial Intelligence:
-First memorable mention of perception in AI has to be attributed to Frank Rosenblatt.  In his 1957 paper "The Perceptron A receiving and recognizing automaton" he puts perception first in the list of "human-like functions". He also references Platos' forms. "the form of a man seen from any angle" However this reference has been greatly overlooked along with his mention of inhibiting connections not included in the current perceptron definition. He writes about his "Sensory System" which we now call the input layer "any connection may be negative (tending to inhibit)". In addition Rosenblatt emphasises importance of time by dividing perceptrons in two categories: "momentary stimulus perceptrons and temporal pattern perceptrons".
+First memorable mention of perception in AI has to be attributed to Frank Rosenblatt.  In his 1957 paper "The Perceptron A Perceiving And Recognizing Automaton" he puts perception first in the list of "human-like functions". He also references Platos' forms. "the form of a man seen from any angle" However this reference has been greatly overlooked along with his mention of inhibiting connections not included in the current perceptron definition. He writes about his "Sensory System" which we now call the input layer "any connection may be negative (tending to inhibit)". In addition Rosenblatt emphasises importance of time by dividing perceptrons in two categories: "momentary stimulus perceptrons and temporal pattern perceptrons".
 
 Where as Rosenblatt wanted his perceptrons to detect the forms, now days we have a more generic word for mechanisms of perception to detect forms.  They are called features.  A feature is a mechanism of perception.  Features can be detected by current models and even used in a generative mode to create  pictures.  Features can be used in a generative mode because they embed information into it's definition.
 
 Feature is an accidental discovery.  It's importance as a mechanism of perception that can make real world observations in terms of time is not well known.  <EDIT> For example, success of LSTM algorithm can be attributed to implementing a clever timing mechanism.  This mechanism allows procesing of stimuli from different time periods.  Instead of making researchers concentrate on the time aspect of the computational models, this hack gained wide acceptance as-is.   Another big problem is if you train any supervised learning algorithm to give you a prediction one day in the future, it will not be able to predict what happens in an hour. This fact itself is counterintuitive. At first it might appear that making an algorithm an on-line learning algorithm might solve the problem.
 
-<EDIT>
-There are two types of AI: a static world, turn based and dynamic world AI.  In a dynamic world a process or processes are observed. Time is a fundamental description of the perceived state of the process (signals). In static world AI, a system is presented with data without a time component.  Such as in turn-based games, pattern recognition etc. Static world AI can be tricked to perform on dynamic world problems by sying take turn every few milliseconds or run every time a sensor is read. This approach can be used in robotics.
+Are features the answer to perception?  It depends on your point of view.  In many current models feature detection or absense is represented by symbols 1 and 0.  Some researchers think about these models of ANNs as symbolic in nature where symbols 0 or 1 are used to "communicate" among neurons.
+ The problem with this point of view is the "Symbol Grounding Problem".  Symbol grounding problem should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in it's computation model.
+Zeros and Ones used in ANNs are not symbols.  They are flags signifying membership in a set defined for a short interval of time.  There are problems with this way of representing time. Some of the problems are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  The important thing is to agree they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
 
-
-<EDIT> They are flags associated with the time period. They are flags signifying membership in a time period.  They are flags signifying membership in a set defined for a time period.
-Zeros and Ones used in ANNs are not symbols. They are flags that signify <belonging> to a time interval.  There are problems with this way of representing time. Some of them are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  However the important thing is to understand they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
-
-<ADD or DELETE>
-Such as buffering of signal to present samples from different times in a parallel manner.
+<DELETE>Such as buffering of signal to present samples from different times in a parallel manner.
+<DELETE> There are alternatives.  For example analog computing is not symbolic in its nature.
 
 <EDIT>
 Connectionism does not explain this. In addition it does not explain <REFERENCE to many neuro transmitters>
 connectivism does not specify that functionally Sensory neurons are the same as internal neurons they are both detectors
 
-Are features the answer to perception? In many current models feature detection or absense is represented symbolically as 0 or 1. The problem with that is the "Symbol Grounding Problem".
-
-Symbol grounding problem should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in it's computation model. <EDIT> Some researchers think about current models of ANNs as symbolic in nature.  Symbols 0 or 1 are used to "communicate" among neurons.  
-
-Aanalog computing is not symbolic in its nature.
-
+<EDIT>
+There are two types of AI.  A static world, turn based and a dynamic world AI.  In a dynamic world processes are observed. Time is a fundamental description of the perceived state of the process (signals).  In static world AI, a system is presented with data without a time component.  Such is done in turn-based games, pattern recognition etc.  Static world AI can be tricked to perform on dynamic world problems by sying take turn every few milliseconds or run every time a sensor is read.  This approach can even be used in robotics.  However it impedes progress.
 
 
 Neurology:
@@ -92,8 +90,6 @@ Embodyment might be the whole reason for having a brain.
 Biological NNs... neurons detect Plato's shapes.
 
 Sensory and hidden layer neurons functionality are the same.
-
-Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
 
 Adaptation indicates detection thresholds are not constant.  On the other hand pain neuronal pathways are not learned and do not degrade over time. <REFERENCE wikipedia???>
 
@@ -189,3 +185,8 @@ My speculation is that algorithms required to build an Intelligent system using 
 
 Compare apples to oranges:
 How about a "purple over here" and a "green over there"?  We have to have domain independent representation.  This need relates to concepts of symbol grounding and qualia.  Domain independent representation can be accomplished by representing everything in terms of time.
+
+
+########### DELETED ################################
+Average neuron threshold potential is about -55mv.
+

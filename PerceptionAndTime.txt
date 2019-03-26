@@ -8,7 +8,7 @@ Summary:
 In traditional computing data is aquired, processed and interpreted or percieved by humans through output devices.  If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by the system designer.  When building Artificial General Intelligence (AGI) our goal is to move this perception boundary inside the system.
 
 <DELETE>
-Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, prediction, reflexes, actuation.  Perception is considered the most important mechanism by many researchers.[1][2]
+Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, prediction, reflexes, embodyment, actuation.  Perception is considered the most important mechanism by many researchers.[1][2]
 The idea is to define the perception mechanism and explain how it becomes part of the system.  
 
 Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.  For example above definition makes it possible to think about observer as a process not an object.  Another goal is to underline the importance of studying time aspects of computational mechanisms.  For example modeling synapses as oscillators or processes instead of weights.
@@ -73,51 +73,41 @@ Are features the answer to perception?  It depends on your point of view.  In ma
  The problem with this point of view is the "Symbol Grounding Problem".  Symbol grounding problem should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in it's computation model.
 Zeros and Ones used in ANNs are not symbols.  They are flags signifying membership in a set defined for a short interval of time.  There are problems with this way of representing time. Some of the problems are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  The important thing is to agree they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems.
 
-<DELETE>Such as buffering of signal to present samples from different times in a parallel manner.
-<DELETE> There are alternatives.  For example analog computing is not symbolic in its nature.
-
-<EDIT>
-Connectionism does not explain this. In addition it does not explain <REFERENCE to many neuro transmitters>
-connectivism does not specify that functionally Sensory neurons are the same as internal neurons they are both detectors
-
 <EDIT>
 There are two types of AI.  A static world, turn based and a dynamic world AI.  In a dynamic world processes are observed. Time is a fundamental description of the perceived state of the process (signals).  In static world AI, a system is presented with data without a time component.  Such is done in turn-based games, pattern recognition etc.  Static world AI can be tricked to perform on dynamic world problems by sying take turn every few milliseconds or run every time a sensor is read.  This approach can even be used in robotics.  However it impedes progress.
 
 
 Neurology:
-Embodyment might be the whole reason for having a brain. 
+Embodyment might be the whole reason for having a brain. <REFERENCE> <EDIT>
+Every voluntary answer your brain gives to any question is expressed in terms of the NOW symbol because it involves muscle movement.[3]  A muscle fiber only needs to know if it has to contract right NOW.  Biology dictates that the only correct question is "when should I twitch that muscle fiber?" and the answer is always now.
 
-Biological NNs... neurons detect Plato's shapes.
-
-Sensory and hidden layer neurons functionality are the same.
-
-Adaptation indicates detection thresholds are not constant.  On the other hand pain neuronal pathways are not learned and do not degrade over time. <REFERENCE wikipedia???>
-
-Every voluntary answer your brain gives to any question is expressed in terms of the NOW symbol because it involves muscle movement.[3]  A muscle fiber only needs to know if it has to contract right NOW.  Biology dictates that the only correct question is "when should I twitch that muscle fiber?" and the answer is always now.  
+<EDIT>
+In some way I feel that neurology gave birth to connectionism.  Connectionism copies some principals in a cargo cult way but does not give any answers.
+Biological neurons detect Plato's shapes.
+Connectionism does not state that it is important to perceive in terms of time . In addition it does not explain <REFERENCE to many neuro transmitters> 
 
 In a biological neural network over two hundred neurotransmitters can be found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons. Connectionism does not address this variety of symbols processed by biological neurons. Mechanisms of changing internal state of a neuron are many and variable. Neuron's membrane potential can be changed via photons, chemical, electrical or mechanical means.  
-These mechanisms are important but are not common to all types of cells.
-The common principle is the detection of internal state change.
+These mechanisms are important but are not common to all types of cells.  The common principle is the detection of internal state change.  How detection works also varies.  Adaptation indicates detection thresholds are not constant.  On the other hand this does not occur in pain receptors.
+<DELETE> Pain neuronal pathways are not learned and do not change over time. <REFERENCE wikipedia???>
 
 Once the mechanism of perception is accepted, one can argue about the mechanisms of state change. Wether they require inhibition. If synapses should be modeled as weights or oscillators.
 
+Sensory and hidden layer neurons functionality are the same.
+Functionally sensory neurons are the same as cortical or peripheral neurons.  They are all detectors.  In ANNs this would translate to input and hiddent layer neurons having the same detection mechanism.
 
 In the context of Artificial Neural Network (ANN), one might argue that hidden layers percieve their inputs just as external stimuli are prerceived. In this case messages passed between neurons are not important. What is important is that change in the internal state of the neuron is detected. This fact drastically influences the ANN models. 
 
 ######################################################################
 
-Why detection? What is wrong with measuring? Measurement is a projection of a real world phenomenon onto a number line.  A shadow. Although a measure might have a meaning for a single observer, it is meaningless to another observer unless units are agreed upon.  It is easier to understand perception through a mechanism where the first observer changes second observer's state without agreeing on units than transfering information in terms of numbers.  Unless one can come up with a mechanism how two observers agree on the units.
+<MOVE>
+Why detection? What is wrong with measuring? Measurement is a projection of a real world phenomenon onto a number line.  A shadow. Although a measure might have a meaning for a single observer, it is meaningless to another observer unless units are agreed upon.  It is easier to understand perception through a mechanism where the first observer changes second observer's state without agreeing on units than transfering information in terms of numbers. <DELETE>Unless one can come up with a mechanism how two observers agree on the units.
 
-Still why is detection needed? Can't the second observer after it's state has been modified by the first go on to modify the third's observer state proportionally to it's own state change? Why does the second observer need to detect it's own state change? Why can't it continuosly change the third observer's state? This is similar to analog electronics where changing component's imput changes it's output.
-It takes energy to change a state. This energy should not be expanded unless the second observer's state has changed. Otherwise by expanding this energy second observer changes it's own state non-deterministically. 
+Still why is detection needed? Can't the second observer after it's state has been modified by the first go on to modify the third's observer state proportionally to it's own state change? Why does the second observer need to detect it's own state change? Why can't it continuosly change the third observer's state? This is similar to analog electronics where for most components changing its imput changes its output.
+It takes energy to change state. This energy should not be expanded unless the second observer's state has changed. Otherwise by expanding this energy second observer changes it's own state non-deterministically. 
 However a system needs to react to external stimuli and not just it's unit's random internal state changes.  Also second observer needs to reset it's state in such a way that when it's state is changed again, the net change can be detected.
 
-This could be just a biological approach to minimize energy consumption (see Rashevsky's principle of Optimal Design) 
+This could be just a biological approach to minimize energy consumption (see Rashevsky's principle of Optimal Design) <REFERENCE>
 [For a set of prescribed biological functions an organism has the optimal possible design with respect to economy of material used, and energy expenditure, needed for the performance of the prescribed function.]
-
-Detection is a way of thinking about mechanism of perception.  One of it's form is threshold detection.
-Why consider detection mechanism? Assuming this model creates a framework for an exaustive search for rules of state modification. 
-Algorithm of changining state changes itself over time. Synapses change over time.  Habbituation gives us a hint that detection algorithm can also change over time. How does the environment influence the change mechanism? Why is there an inhibiting mechanism?  
 
 #######################################################################
 
@@ -138,6 +128,9 @@ Observing the signal via multiple observers that detect changes instead of sampl
 Statistics:
 In statistics mechanism of perception can be used to runs statistical experiments.  It allows one to go from observing random processes in real world to producing results of an experiment. Every time a change is detected, it produces an outcome in an experiment.
 
+<EDIT>
+Perception mechanism bridges observation of random processes (random variables dependent on time) and statistical experiments.  Detection triggers the start of a new experiment. as well as defines it (feature binding concept helps define the boundaries of experiment (set of random variables) Detection described in terms of point processes form a set of possible outcomes.
+
 Imagine you are observing a toss of a fair coin in the air. There are several random processes that can be observed for example:
 f(t) is the height of the coin in inches
 g(t) is the hight of the coin in meters
@@ -145,17 +138,14 @@ h(t) is the angle of the coin relative to horizon in degrees
 how does one create an experiment to check if the coin is fair? First one needs to pick values of the random processes that define an outcome of the experiment. Lets say f(t) = 0, g(t) = 0 and h(t) = 0.  In addition one needs to pick times t1, t2, t3, etc at which these random variables are realized.
 
 <EDIT>
-Embodyment allows conducting experiments with small changes.
-A coin is laying on the road cars are passing by and push the coin around but it does not flip it appears that the coin always lays on one side. just observing it will give you a probability distribution where a coin always lands on one side.
-<EDIT>
-Importance of embodyment can be explained in terms of statistics: embodyment allows one to change the experiment instead of just observing it. Bertrand paradox Method of selection/realization/observation influences the distribution of the random variable.
+At this point importance of embodyment has to be mentioned.  Embodyment allows modifying experiments instead of just observing them. Bertrand paradox Method of selection/realization/observation influences the distribution of the random variable.
+A coin is laying on the road.  Cars are passing by and push the coin around but it does not flip.  It appears that the coin always lays on one side. Just observing it will give you a probability distribution where a coin always lands on one side.
 
-Perception mechanism bridges observation of random processes (random variables dependent on time) and statistical experiments.  Detection triggers the start of a new experiment. as well as defines it (feature binding concept helps define the boundaries of experiment (set of random variables) Detection described in terms of point processes form a set of possible outcomes.
-* Embodyment allows changing the experiment
-* Relative frequncy of occurence of event is a measure of the probability. <REFERENCE - wikipedia ???>
-* The advantage of using a point process is that a single random variable describing the frequency of the events is defined apriori.
+* Relative frequncy of occurence of event is a measure of the probability. <REFERENCE - wikipedia ???> How does one go from a continuous random variable to an event?
+<DELETE> The advantage of using a point process is that a single random variable describing the frequency of the events is defined apriori.
 
-Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations. Only data produced during identical time intervals can be combined.  This data will exibit correlation without causality. Causality on the other side will express itself as correlation in data from different time intervals. To avoid inverse error one needs to specify that correlation of data from different time intervals does not imply causality. Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. In order to reason this way one needs to establish these time intervals. This is much easier to do when all information is expressed in terms of time instances.
+Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations.  Only data produced during identical time intervals can be combined.  This data will exibit correlation without causality.  Causality on the other side will express itself as correlation in data from different time intervals.  To avoid inverse error one needs to specify that correlation of data from different time intervals does not imply causality. <DELETE> Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. 
+In order to reason this way one needs to establish time intervals. This is much easier to do when all information is expressed in terms of time in a point process.
 
 
 Conclusion:
@@ -186,7 +176,10 @@ My speculation is that algorithms required to build an Intelligent system using 
 Compare apples to oranges:
 How about a "purple over here" and a "green over there"?  We have to have domain independent representation.  This need relates to concepts of symbol grounding and qualia.  Domain independent representation can be accomplished by representing everything in terms of time.
 
+Analog computing is not symbolic in its nature.
 
-########### DELETED ################################
-Average neuron threshold potential is about -55mv.
+<EDIT> One can not detect what he or she does not know.
 
+Detection is a way of thinking about mechanism of perception.  One of it's form is threshold detection.
+Why consider detection mechanism? Assuming this model, creates a framework for an exaustive search for rules of state modification. 
+Algorithm of changining state changes itself over time. Synapses change over time.  Habbituation gives us a hint that detection algorithm can also change over time. How does the environment influence the change mechanism?   Why is there an inhibiting mechanism?

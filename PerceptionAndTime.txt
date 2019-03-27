@@ -7,19 +7,17 @@ March 24, 2019
 Summary:
 In traditional computing data is aquired, processed and interpreted or percieved by humans through output devices.  If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by the system designer.  When building Artificial General Intelligence (AGI) our goal is to move this perception boundary inside the system.
 
-<DELETE>
-Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, prediction, reflexes, embodyment, actuation.  Perception is considered the most important mechanism by many researchers.[1][2]
-The idea is to define the perception mechanism and explain how it becomes part of the system.  
+Intelligence is an emergent behavior attributed to entities posessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habbituation, prediction, reflexes, embodyment, actuation and many other.  Perception is considered the most important mechanism by many researchers.[1][2]
 
 Perception is detection of an internal state change described in terms of time.  Detection of state change should not be described by changing the state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.  For example above definition makes it possible to think about observer as a process not an object.  Another goal is to underline the importance of studying time aspects of computational mechanisms.  For example modeling synapses as oscillators or processes instead of weights.
 
 
 Introduction:
-Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  A better description takes time into account for example by including patterns of temporal-spacial neural activations.
+Current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  A better description might take time into account usually by including something abstract, for example temporal patterns of neural activity.
 
 <DELETE>Author will refrain from providing references to these definitions. I will simply provide a counter-example: 
 <EDIT>
-a rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time.
+A rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time.
 It can form dazzling patterns and crystalline structures. Reflects or absorbs light, conducts or insulates electric currents. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However taking all that complex behavior into account I hope no one will claim that the rock can perceive it's environment.  If you believe that the rock example is irrelevant, just remember that a CCD sensor's wafer is made of silica.
 On the other hand inside a neuron a different process takes place. Neuron's state (it's membrane potential) is changed by external stimuli. External stimula constitutes sensory stimula or synaptic potential.  When membrane potential reaches a certain voltage level it is detected and neuron fires.  Since the process is cyclic in nature <EDIT stationary???>, the change is described by when it occured as opposed to how the state changed.  Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
 
@@ -33,7 +31,7 @@ Before proceeding to explain how perception relates to Artificial Intelligence, 
 <TIE in>
 Change in temperature freezes the lake not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. Only the change in temperature can describe that the state of the lake is changing. 
 
-<TIE in with manchester encoding???>
+<TIE in> Manchester encoding adds observer clock synchronization to symbols used to communicate.
 
 <ADD>
 Brightness of a pixel (red 34) VS one pixel brighter than the other (A>B). Which carries more information?
@@ -57,9 +55,12 @@ Measuring the state of the environment produces symbols frequently expressed as 
 <ADD> count of how many times a measuring stick fits.
 
 Numbers are projections of real world penomena onto an axis. They are Plato's shadows. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which can not be expressed symbolicaly.  Qualia is perception of a form.
+<EDIT>
+Although a measure might have a meaning for a single observer, it is meaningless to another observer unless units are agreed upon.  It is easier to understand perception through a mechanism where the first observer changes second observer's state without agreeing on units than transfering information in terms of numbers or symbols. <DELETE>Unless one can come up with a mechanism how two observers agree on the units.
 
 <TIE in>
 Time instance is the smallest quanta of information yet since time is continuous its resolution is limited only by an observer's precision.
+Detecting a change is much more precise in time than sampling.  While sampling, the change could occur anywhere within the time period.  Detecting a change will most of the time result in a constant delay.  Similar to propagation of the information about an event through the environment. For example thunder after lightning. Although in this case the delay is not a constant.
 
 
 Perception in Artificial Intelligence:
@@ -82,6 +83,8 @@ Embodyment might be the whole reason for having a brain. <REFERENCE> <EDIT>
 Every voluntary answer your brain gives to any question is expressed in terms of the NOW symbol because it involves muscle movement.[3]  A muscle fiber only needs to know if it has to contract right NOW.  Biology dictates that the only correct question is "when should I twitch that muscle fiber?" and the answer is always now.
 
 <EDIT>
+When we design we look for existing designs.  Neurology is the study of the systems we admire.
+If Neurology had a twin brother, it would be connectionism.  Definition of perception can strenghten connectionism.
 In some way I feel that neurology gave birth to connectionism.  Connectionism copies some principals in a cargo cult way but does not give any answers.
 Biological neurons detect Plato's shapes.
 Connectionism does not state that it is important to perceive in terms of time . In addition it does not explain <REFERENCE to many neuro transmitters> 
@@ -97,19 +100,15 @@ Functionally sensory neurons are the same as cortical or peripheral neurons.  Th
 
 In the context of Artificial Neural Network (ANN), one might argue that hidden layers percieve their inputs just as external stimuli are prerceived. In this case messages passed between neurons are not important. What is important is that change in the internal state of the neuron is detected. This fact drastically influences the ANN models. 
 
-######################################################################
+Why detection? Why can't another mechanism be used?  Can't the second observer after it's state has been modified by the first go on to modify the third's observer state proportionally to it's own state change? Why does the second observer need to detect it's own state change? Why can't it continuosly change the third observer's state?  Similar to analog electronics where for most components changing its imput changes its output.  This approach is used in analog computing which is also not symbolic in nature. However this approach leads to energy continuously expanded.
 
-<MOVE>
-Why detection? What is wrong with measuring? Measurement is a projection of a real world phenomenon onto a number line.  A shadow. Although a measure might have a meaning for a single observer, it is meaningless to another observer unless units are agreed upon.  It is easier to understand perception through a mechanism where the first observer changes second observer's state without agreeing on units than transfering information in terms of numbers. <DELETE>Unless one can come up with a mechanism how two observers agree on the units.
+<DELETE>Compare this to analog computing where energy is constantly expanded. Analog computing is not symbolic in its nature.
 
-Still why is detection needed? Can't the second observer after it's state has been modified by the first go on to modify the third's observer state proportionally to it's own state change? Why does the second observer need to detect it's own state change? Why can't it continuosly change the third observer's state? This is similar to analog electronics where for most components changing its imput changes its output.
+Detection mechanism is a biological approach to minimize energy consumption. According to Rashevsky, "for a set of prescribed biological functions an organism has the optimal possible design with respect to economy of material used, and energy expenditure, needed for the performance of the prescribed function." [7]
+
 It takes energy to change state. This energy should not be expanded unless the second observer's state has changed. Otherwise by expanding this energy second observer changes it's own state non-deterministically. 
 However a system needs to react to external stimuli and not just it's unit's random internal state changes.  Also second observer needs to reset it's state in such a way that when it's state is changed again, the net change can be detected.
 
-This could be just a biological approach to minimize energy consumption (see Rashevsky's principle of Optimal Design) <REFERENCE>
-[For a set of prescribed biological functions an organism has the optimal possible design with respect to economy of material used, and energy expenditure, needed for the performance of the prescribed function.]
-
-#######################################################################
 
 On the importance of time in physics, engineering and other sciences:
 In classical physics one wants to describe reality in terms of functions. For example in an experiment where a ball is moving left and right on a track the balls position is described as a function of time f(t). This description breaks down when something unaccouned for happens.  If the ball is picked up and later placed back on the track this can be defined as a discontinuity in f(t). This discontinuity can be described in terms of the time interval because math describes the world in an instance of time or as a function of time.
@@ -122,7 +121,10 @@ How do you turn continuous into discrete? Sample it at even time intervals to pr
 
 Sampling a random process at an arbitrary frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor sampling brightness 100 times per second produces 8,640,000 samples in 24 hours. This is excessive if the goal is to figure out if it is night or day. Given noise is not a problem, detecting changes produces the optimal sample rate to capture the signal.
 
-Observing the signal via multiple observers that detect changes instead of sampling is a better model that uses the mechanism of perception.
+<EDIT>
+Detection model does not suffer from undersampling below Nyquist's frequency. Although some events will appear as if they occured in an instant.
+
+Observing the signal via multiple observers that detect changes instead of sampling is a better model that uses the mechanism of perception.  Observer1 detects a change in one unit. Observer2 detects a change in two units and so on.
 
 
 Statistics:
@@ -159,26 +161,19 @@ References:
 [4] https://en.wikipedia.org/wiki/Point_process
 [5] https://en.wikipedia.org/wiki/Quantification_(science)
 [6] https://en.wikipedia.org/wiki/Symbol_grounding_problem
+[7] Rashevsky, Principle of Optimal Design, <YEAR>
 
 <EDIT - change ted and wikipedia links to links to papers>
 
 
 #########################################
 Machine learning deals with data bypassing perception
+One can not detect what he or she does not know.
 
-Detecting a change is much more precise in time than sampling.  While sampling, the change could occur anywhere within the time period.  Detecting a change will most of the time result in a constant delay.  So does propagation of the information about an event through the environment. For example thunder after lightning.
-Detection model does not suffer from undersampling below Nyquist's frequency. Although some events will appear as if they occured in an instant.
-
-Observer1 detects a change in one unit. Observer2 detects a change in two units and so on.
-
-My speculation is that algorithms required to build an Intelligent system using ANNs would describe (A) how an individual neuron operates (B) how neurons interconnect into groups such as cortical columns (C) how these groups are connected to each other, which might be a genetic algorithm. 
+My speculation is that algorithms required to build an Intelligent system using ANNs would describe (A) how an individual neuron operates (B) how neurons interconnect into groups such as cortical columns (C) how these groups are connected to each other, which might be a genetic algorithm.
 
 Compare apples to oranges:
 How about a "purple over here" and a "green over there"?  We have to have domain independent representation.  This need relates to concepts of symbol grounding and qualia.  Domain independent representation can be accomplished by representing everything in terms of time.
-
-Analog computing is not symbolic in its nature.
-
-<EDIT> One can not detect what he or she does not know.
 
 Detection is a way of thinking about mechanism of perception.  One of it's form is threshold detection.
 Why consider detection mechanism? Assuming this model, creates a framework for an exaustive search for rules of state modification. 

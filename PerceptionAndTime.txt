@@ -23,15 +23,37 @@ On the other hand inside a neuron a different process takes place. Neuron's stat
 
 <DELETE or EDIT>
 Misunderstanding that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it happened as opposed to <EDIT> a symbol changing from A to B in the state-oriented view. In this case symbol can represent any property or quantity.
+<EDIT>
+can be described by when the process started or when it started interacting with another process.
+Lambda calculus - no state.
+Function terminates, twitch the muscle
 
-
+<EDIT>
+Measuring and numbers:
+Perception and measure:
 Perception in philosophy:
-Before proceeding to explain how perception relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". The theory is about 1500 years old and withstood the test of time.  Plato describes objects being perceived as shadows without ever knowing their true form.  He also adds that a true philosopher thinks in terms of forms.
+Values, symbols, numbers, state, perception and philosophy:
 
+What is the difference between 20 and 68?  None, because 20 degrees Celsius is 68 degrees Fahrenheit.  Is five equal five? No, because five inches are longer than five centimeters.  Values are meaningless without units.  It is a problem of comparing apples to oranges.  If the units do not match, things can not be related.
+
+Measuring the state of the environment produces values such as length of a stick or angles or voltage levels, frequently expressed as numbers in digital systems.  Numbers are measures of an object's state (or rate of state change) from an absolute reference point such as zero.  The reference point and scale usually have nothing to do with the object whos properties are measured.  They are qualities of an observer.
+
+Although a measure might have a meaning for a single observer, it is meaningless to another observer unless units are agreed upon.  It is easier to understand perception through a mechanism where the first observer changes second observer's state without agreeing on units than transfering information in terms of numbers or symbols.
+Talking about units leads to the problem of Qualia.
+
+Any observer cannot directly measure the state of an object such as its color or temperature.  It can only observe changes in the environment. [REFERENCES?]  A photon arriving at the retina, hair deflecting in a cochlea, tactile input, molecule locking into a receptor in the nose, they are all events occuring in the sensor's environment.  When we are looking at observations expressed in terms of values we are frequently looking at the number of events per unit of time.  Ironically Quantification, a concept that has to give meaning to observation is the reason observations lose their grounding.[5] 
+It forms a symbolic world representation.
+
+Before proceeding to explain how perception relates to Artificial Intelligence, lets review some historical views on perception. One of the first well known models of perception are Plato's theory of forms and his "Allegory of the Cave". The theory is about 1500 years old and withstood the test of time.  Plato describes objects being perceived as shadows without ever knowing their true form.  He also adds that a true philosopher thinks in terms of forms.
+Numbers are projections of real world penomena onto an axis.  They are Plato's shadows.  Every time a measurement is made, a shadow is produced.  The alternatives are Plato's forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.
+
+This closely relates to the problem of qualia which can not be expressed symbolicaly.  Qualia is perception of a form.
+<ADD> count of how many times a measuring stick fits.
+########################### END OF MEASURE #########################
+
+<TITLE?> Change and difference:
 <TIE in>
 Change in temperature freezes the lake not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. Only the change in temperature can describe that the state of the lake is changing. 
-
-<TIE in> Manchester encoding adds observer clock synchronization to symbols used to communicate.
 
 <ADD>
 Brightness of a pixel (red 34) VS one pixel brighter than the other (A>B). Which carries more information?
@@ -39,24 +61,7 @@ Brightness of a pixel (red 34) VS one pixel brighter than the other (A>B). Which
 Now is the best answer.  All information available before now is taken into account.
 What action should I perform right now? vs Should I perform a specific action right now?  Both approarches try to answer what the sequence of actions should be.
 
-
-
-Measuring and numbers: <EDIT unite into "Perception and measure" section?>
-What is the difference between 20 and 68?  None, because 20 degrees Celsius is 68 degrees Fahrenheit.  Is five equals five? No, because five inches are longer than five centimeters.  Values are meaningless without units.  Talking about units leads to the problem of Qualia.
-
-On the other hand there is a problem of comparing apples to oranges.  If the units do not match, things can not be related.
-
-Values are measures of an object's state from an absolute reference point such as zero.  The reference point and scale usually have nothing to do with the object whos properties are measured.  They are qualities of an observer.  Values can also measure a change in an object's state or the rate of change.  
-
-Any observer cannot directly measure the state of an object such as its color or temperature.  It can only observe changes. [REFERENCES?]  A photon arriving at the retina, hair deflecting in a cochlea, tactile input, molecule locking into a receptor in the nose, they are all events occuring in the sensor's environment.  When we are looking at observations expressed in terms of values we are frequently looking at the number of events per unit of time.  Ironically Quantification, a concept that has to give meaning to observation is the reason observations lose their grounding.[5] 
-
-Measuring the state of the environment produces symbols frequently expressed as numbers in digital systems. 
-<TIE in> It forms a symbolic world representation.
-<ADD> count of how many times a measuring stick fits.
-
-Numbers are projections of real world penomena onto an axis. They are Plato's shadows. Every time a measurement is made, a shadow is produced. What are the alternatives you ask? In Plato's terms they are forms.  Forms can not be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which can not be expressed symbolicaly.  Qualia is perception of a form.
-<EDIT>
-Although a measure might have a meaning for a single observer, it is meaningless to another observer unless units are agreed upon.  It is easier to understand perception through a mechanism where the first observer changes second observer's state without agreeing on units than transfering information in terms of numbers or symbols. <DELETE>Unless one can come up with a mechanism how two observers agree on the units.
+<TIE in> Manchester encoding adds observer clock synchronization to symbols used to communicate.
 
 <TIE in>
 Time instance is the smallest quanta of information yet since time is continuous its resolution is limited only by an observer's precision.

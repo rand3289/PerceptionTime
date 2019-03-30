@@ -25,7 +25,7 @@ On the other hand inside a neuron a different process takes place. Neuron's stat
 Misunderstanding that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it happened as opposed to <EDIT> a symbol changing from A to B in the state-oriented view. In this case symbol can represent any property or quantity.
 <EDIT>
 can be described by when the process started or when it started interacting with another process.
-Lambda calculus - no state.
+<DELETE>
 Function terminates, twitch the muscle
 
 <EDIT>
@@ -123,6 +123,7 @@ In Engineering proceses are often modeled by linear function on intervals of tim
 Digital Signal Processing:
 How do you turn continuous into discrete? Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of change.  As speed of an ADC converter increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in "One-bit Audio" encoding.
 <ADD - continue the thought>
+In DSP, random variables such as phase, amplitude and frequency are defined apriori.
 
 Sampling a random process at an arbitrary frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data. Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  For example a sensor sampling brightness 100 times per second produces 8,640,000 samples in 24 hours. This is excessive if the goal is to figure out if it is night or day. Given noise is not a problem, detecting changes produces the optimal sample rate to capture the signal.
 
@@ -133,6 +134,13 @@ Observing the signal via multiple observers that detect changes instead of sampl
 
 
 Statistics:
+<EDIT - keep one>
+Perceiving any continuous process always leads to discrete time observations.
+Perceiving a continuous random process will yield discrete time realizations.
+will yeild discrete mappings to a set of outcomes.
+Each observer...???... a member in a set.
+The set is defined for a short time period which is the window of an experiment.
+
 In statistics mechanism of perception can be used to runs statistical experiments.  It allows one to go from observing random processes in real world to producing results of an experiment. Every time a change is detected, it produces an outcome in an experiment.
 
 <EDIT>
@@ -148,7 +156,7 @@ how does one create an experiment to check if the coin is fair? First one needs 
 At this point importance of embodyment has to be mentioned.  Embodyment allows modifying experiments instead of just observing them. Bertrand paradox Method of selection/realization/observation influences the distribution of the random variable.
 A coin is laying on the road.  Cars are passing by and push the coin around but it does not flip.  It appears that the coin always lays on one side. Just observing it will give you a probability distribution where a coin always lands on one side.
 
-* Relative frequncy of occurence of event is a measure of the probability. <REFERENCE - wikipedia ???> How does one go from a continuous random variable to an event?
+Relative frequncy of occurence of event is a measure of the probability. <REFERENCE - wikipedia ???> How does one go from a continuous random variable to an event?
 <DELETE> The advantage of using a point process is that a single random variable describing the frequency of the events is defined apriori.
 
 Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations.  Only data produced during identical time intervals can be combined.  This data will exibit correlation without causality.  Causality on the other side will express itself as correlation in data from different time intervals.  To avoid inverse error one needs to specify that correlation of data from different time intervals does not imply causality. <DELETE> Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. 
@@ -156,7 +164,7 @@ In order to reason this way one needs to establish time intervals. This is much 
 
 
 Conclusion:
-The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, study of coupled oscillators and point processes.  It is just as important to revisit and recosider classic reasearch with this new outlook on perception to find what was missed and correct assumptions.
+The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, study of coupled oscillators, point processes and relation to Lambda calculus.  It is just as important to revisit and recosider classic reasearch with this new outlook on perception to find what was missed and correct assumptions.
 
 
 References:
@@ -166,7 +174,7 @@ References:
 [4] https://en.wikipedia.org/wiki/Point_process
 [5] https://en.wikipedia.org/wiki/Quantification_(science)
 [6] https://en.wikipedia.org/wiki/Symbol_grounding_problem
-[7] Rashevsky, Principle of Optimal Design, <YEAR>
+[7] N. Rashevsky, Principle of Optimal Design
 
 <EDIT - change ted and wikipedia links to links to papers>
 
@@ -183,3 +191,6 @@ How about a "purple over here" and a "green over there"?  We have to have domain
 Detection is a way of thinking about mechanism of perception.  One of it's form is threshold detection.
 Why consider detection mechanism? Assuming this model, creates a framework for an exaustive search for rules of state modification. 
 Algorithm of changining state changes itself over time. Synapses change over time.  Habbituation gives us a hint that detection algorithm can also change over time. How does the environment influence the change mechanism?   Why is there an inhibiting mechanism?
+
+Thermostat can detect a change in temperature.  It can make my AC actuate.  Does it perceive the change?
+This paper does not attempt to prove that a thermostat can perceive its environment.

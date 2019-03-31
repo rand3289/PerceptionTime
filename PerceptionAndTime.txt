@@ -1,7 +1,7 @@
 Perception and time in Artificial General Intelligence.
 Andrey Makushkin
 toandrey@yahoo.com
-March 24, 2019
+March 31, 2019
 
 
 Summary:
@@ -15,12 +15,12 @@ Perception is detection of an internal state change described in terms of time. 
 Introduction:
 In artificial intelligence (AI), current widely accepted definition of perception can be summarized as "perception is a change in internal state as a result of external stimuli".  Better descriptions take time into account usually by including something abstract, for example temporal patterns of neural activity.  These definitions do not adequately describe the mechanism.
 
-A rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time.  It can form dazzling patterns and crystalline structures. Reflects or absorbs light, conducts or insulates electric currents. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However taking all that complex behavior into account not many will claim that the rock can perceive it's environment.  If you believe that the rock example is irrelevant, just remember that a CCD sensor's wafer is made of silica.
+A rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time.  It can form dazzling patterns and crystalline structures. Reflects or absorbs light, conducts or insulates electric currents. Geologist have made careers out of studying long term memories of the rocks. It can also actuate by falling on a passer-by's head as a result of changing its state. However taking all that complex behavior into account not many will claim that the rock can perceive it's environment.  If you believe that the rock example is irrelevant, just remember that CCD and CMOS sensor wafers are made from silica.
 
-On the other hand inside a neuron a different process takes place.  Neuron's state (it's membrane potential) is changed by external stimuli.  External stimula constitutes sensory stimula or synaptic potential.  When membrane potential reaches a certain voltage level it is detected and neuron fires.  Since the process is cyclic <EDIT stationary???>, the change is described by when it occured as opposed to how the state changed.  Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
+On the other hand inside a neuron a different process takes place.  Neuron's state (it's membrane potential) is changed by external stimuli.  External stimula constitutes sensory stimula or synaptic potential.  When membrane potential reaches a certain voltage level it is detected and the neuron fires.  Since the process is cyclic <EDIT stationary???>, the change is described by when it occured as opposed to how the state changed.  Neurologists often model neural activity as one dimentional point processes with time labeling the axis.
 
 <DELETE>
-Misunderstanding that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it occured as opposed to how the state changed.
+Assumption that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view a change in a process can be described by when it occured as opposed to how the state changed.
 
 
 <EDIT>
@@ -29,7 +29,7 @@ Perception and measure:
 Perception in philosophy:
 Values, symbols, numbers, state, perception and philosophy:
 
-What is the difference between 20 and 68?  None, because 20 degrees Celsius is 68 degrees Fahrenheit.  Is five equal five? No, because five inches are longer than five centimeters.  Values are meaningless without units.  It is a problem of comparing apples to oranges.  If the units do not match, things can not be related.
+What is the difference between 20 and 68?  None, because 20 degrees Celsius is 68 degrees Fahrenheit.  Is five longer than five?  Yes, because five inches are longer than five centimeters.  Values are meaningless without units.  It is a problem of comparing apples to oranges.  If the units do not match, things can not be related.
 
 Measuring the state of the environment produces values such as length of a stick, angles or voltage levels, frequently expressed as numbers in digital systems.  Numbers are measures of an object's state (or rate of state change) from an absolute reference point such as zero.  The reference point and scale usually have nothing to do with the object whos properties are measured.  They are qualities of an observer.
 
@@ -43,13 +43,10 @@ Numbers are projections of real world penomena onto an axis.  They are Plato's s
 
 
 Change, difference and time:
-Change in temperature freezes the lake not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. Has it been frozen a day or a week?  Who knows?  Only the change in temperature can describe that the state of the lake is changing.
+Drop in temperature freezes the lake not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. Has it been frozen a day or a week?  Who knows?  Only the change in temperature can describe that the state of the lake is changing.
 
 <ADD>
 Brightness of a pixel (red 34) VS one pixel is brighter than the other.  Which carries more information?
-
-Now is the best answer.  All information available before now is taken into account.
-What action should I perform right now? vs Should I perform a specific action right now?  Both approarches try to answer what the sequence of actions should be.
 
 <TIE in>
 Time instance is the smallest quanta of information yet since time is continuous its resolution is limited only by an observer's precision.
@@ -71,13 +68,16 @@ If you train a supervised learning algorithm to give you a prediction one day in
 
 
 Neurology:
-Embodyment might be the whole reason for having a brain. <REFERENCE> <EDIT> Every voluntary answer your brain gives to any question involves muscle movements.[3]  A muscle fiber only needs to know if it has to contract right NOW.  The only question then becomes is "when should I twitch that muscle fiber?" and the answer is always now.
-<MOVE now is the best answer here???>
+Embodyment might be the whole reason for having a brain. <REFERENCE> <EDIT> Every voluntary answer your brain gives to any question involves muscle movements.[3]  A muscle fiber only needs to know if it has to contract right NOW.  The only question then becomes is "when should I twitch that muscle fiber?" and the answer is always now.  Now is also the best answer.  All information available before right now is taken into account.  Answering by providing a specific time or a condition that has to occur in the future runs a risk that new informaton will become available and decision will no longer be optimal.
+<DELETE>
+What action should I perform right now? And should I perform a specific action right now?  Both approarches use all available up to now information.
 
-If Neurology had a brother born in another country, it would be connectionism.  Connectionism copies some principles from neurology in a cargo cult way without providing any axioms.  Connectionism does not state that it is important to perceive in terms of time.  Does not state that biological neurons detect Plato's forms.  It does not explain multitude of neurotransmitters in biologican neural networks (NNs).  Adding definition of perception to connectionism will greatly strenghten it.
+<EDIT - remove references to connectionism???>
+If Neurology had a brother born in another country, it would be connectionism.  Connectionism copies some principles from neurology in a cargo cult way without providing any axioms.  Adding definition of perception to connectionism will greatly strenghten it.  Connectionism should state that it is important to perceive in terms of time.  It should state that biological neurons detect Plato's forms.  It should explain multitude of neurotransmitters in biologican neural networks (NNs).
 
-In biological neural networks over two hundred neurotransmitters are found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons. Connectionism does not address this variety of symbols processed by biological neurons. Mechanisms of changing internal state of a neuron are many and variable. Neuron's membrane potential can be changed by photons, chemical, electrical or mechanical means.  Sometimes indirectly through flow of sodium and potassium ions across a membrane.  These mechanisms are important but are not common to all types of cells.  The common principle is the detection of internal state change.  How detection works also varies.  Adaptation indicates detection thresholds are not constant.  On the other hand pain receptors and neuronal pathways are not learned and do not change over time. <REFERENCE wikipedia???>
+In biological neural networks over two hundred neurotransmitters are found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons. Connectionism does not address this variety of symbols processed by biological neurons. In neurology, mechanisms of changing internal state of a neuron are many and variable. Neuron's membrane potential can be changed by photons, chemical, electrical or mechanical means.  Sometimes indirectly through flow of sodium and potassium ions across a membrane.  Mechanisms can be inhibiting or exciting.  These mechanisms are important but are not common to all types of cells.  The common principle is the detection of internal state change.  How detection works also varies.  Adaptation indicates detection thresholds are not constant.  On the other hand pain receptors and neuronal pathways are not learned and do not change over time. <REFERENCE wikipedia???>
 
+<EDIT>
 Once the mechanism of perception is accepted, one can argue about the mechanisms of state change. Wether they require inhibition. If synapses should be modeled as weights or oscillators.
 
 Functionally sensory neurons are the same as cortical or peripheral neurons.  They are all detectors.  In ANNs this would translate to input and hiddent layer neurons having the same detection mechanism.
@@ -91,7 +91,7 @@ Detection mechanism is a biological approach to minimize energy consumption. Acc
 It takes energy to change state. This energy should not be expanded unless the second observer's state in the previous example has changed. Otherwise by expanding this energy second observer changes it's own state non-deterministically.  However a system needs to react to external stimuli and not just it's unit's random internal state changes.  Also second observer needs to reset it's state in such a way that when it's state is changed again, the net change can be detected.
 
 
-On the importance of time in physics, engineering and other sciences:
+On the importance of time in physics and engineering:
 In classical physics one wants to describe the world in terms of functions.  For example in an experiment where a ball is moving left and right on a track the ball's position can be described as a function of time f(t).  This description breaks down when something unaccouned for happens.  For example the ball is picked up and later placed back on the track.  This action can be defined as a discontinuity in f(t).  The discontinuity can be described in terms of the time interval because math describes the world in an instance of time or as a function of time.
 
 In Engineering non-linear proceses are often modeled by linear functions on some intervals.  The function can be chosen by an engineer or fitted by linear regression.  When linear approximation is used for a function of time, a time interval during which it is valid has to be defined.  This is similar to subsumption architecture in robotics where state machines describing non-linear behavior become valid during some periods of time.  Describing everything in a system in terms of time (perception/ internal representations /actions) fits well with techniques described above.
@@ -114,10 +114,10 @@ Statistics:
 Relative frequncy of occurence of event is a measure of the probability. <REFERENCE - wikipedia ???> How does one go from observing a continuous random process to an event?  How does one construct an experiment <automatically>?
 
 <EDIT - keep one>
-Perceiving any continuous process always leads to discrete time observations.
+Perceiving any continuous random process always leads to discrete time observations.
 Perceiving a continuous random process will yield discrete time realizations.
-will yeild discrete mappings to a set of outcomes.
-Each observer...???... a member in a set.
+Perceiving a continuous random process will yeild discrete mappings to a set of outcomes.
+Each observer...<blah>... a member in a set.
 The set is defined for a short time period which is the window of an experiment.
 
 <EDIT>
@@ -141,8 +141,8 @@ A coin is laying on the road.  Cars are passing by and push the coin around but 
 
 Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations.<ADD - how?>
 
-Only data produced during identical time intervals <EDIT> can be combined into an experiment.  This data may exibit correlation without causality.  Causality on the other side will express itself as correlation in data from different time intervals.  To avoid inverse error one needs to specify that correlation of data from different time intervals does not imply causality. <DELETE> Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. 
-In order to reason this way one needs to establish time intervals.  This is easier to do when information is expressed in terms of time as in a point process.
+Only data produced during identical time intervals <EDIT> can be combined into an experiment.  This data may exibit correlation without causality.  Causality on the other side will express itself as correlation in data from different time intervals.  To avoid an inverse error one needs to specify that correlation of data from different time intervals does not imply causality. <DELETE> Also one can NOT illiminate correlation without cause for example by dimentionality reduction techniques. 
+In order to reason this way one needs to establish time intervals.  This is easier done when information is expressed in terms of time as in a point process.
 
 
 Conclusion:

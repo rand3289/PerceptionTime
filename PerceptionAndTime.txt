@@ -5,11 +5,11 @@ April 12, 2019
 
 
 Summary:
-In traditional computing data is received or acquired and transformed by computers.  Output of these computations is interpreted or perceived by humans.  If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by system designers.  When building Artificial General Intelligence (AGI) our goal is to move this perception boundary inside the system.
-
 Intelligence is an emergent behavior attributed to entities possessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habituation, prediction, reflexes, embodiment, actuation and many other.  Perception is considered the most important mechanism by many researchers.[1][2]
 
-The goal of this paper is to define perception.  Perception is detection of an internal state change described in terms of time.  Detection of state change inside the system should not be described by changing the system state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.  For example above definition makes it possible to think about an observer as a process and not an object.  Another goal is to underline the importance of studying time aspects of computational mechanisms.  For example modeling artificial neural network (ANN) synapses as oscillators or processes instead of weights.
+In traditional computing data is received or acquired and transformed by computers.  Output of these computations is interpreted or perceived by humans.  If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by system designers.  When building Artificial General Intelligence (AGI) our goal is to move this perception boundary inside the system.
+
+The goal of this paper is to define perception.  Perception is detection of an internal state change described in terms of time.  Detection of state change inside the system should not be described by further changing the system state.  This paper tries to explain this statement through examples and references to existing literature as well as elaborate on the implications.  For example above definition makes it possible to think about an observer as a process and not an object.  Another goal is to underline the importance of studying time aspects of computational mechanisms.  For example modeling artificial neural network (ANN) synapses as oscillators or processes instead of weights.
 
 
 Introduction:
@@ -52,7 +52,8 @@ If you train a supervised learning algorithm to give you a prediction one day in
 
 
 Neurology:
-Embodiment might be the whole reason for having a brain.  Every voluntary answer your brain gives to any question involves muscle movements.[3]  A muscle fiber only needs to know if it has to contract right now.  The only question then becomes is "when should I twitch that muscle fiber?"  The answer is always "NOW", given at the right time.  Now is also the best answer.  All information available before right now is taken into account.  Answering by providing a specific time or a condition that has to occur in the future runs a risk that new information will become available and decision will no longer be optimal.
+<EDIT>
+Hypothesis that brain is required only when an animal is able to move is given to us courtecy of sea squirt.  It turns out every voluntary answer your brain gives to any question involves muscle movements.[3]  A muscle fiber only needs to know if it has to contract right now.  The only question then becomes is "when should I twitch that muscle fiber?"  The answer is always "NOW", given at the right time.  Now is also the best answer.  All information available before right now is taken into account.  Answering by providing a specific time or a condition that has to occur in the future runs a risk that new information will become available and decision will no longer be optimal.
 
 <EDIT - remove references to connectionism???>
 If Neurology had a brother born in another country, it would be connectionism.  Connectionism copies some principles from neurology in a cargo cult way without providing any axioms.  Adding definition of perception to connectionism will greatly strengthen it.  Connectionism should state that it is important to perceive in terms of time.  It should state that biological neurons detect Plato's forms.  It should explain multitude of neurotransmitters in biological neural networks (NNs).
@@ -61,27 +62,29 @@ In biological NNs over two hundred neurotransmitters are found. If an analogy wi
 
 Once the mechanism of perception is accepted, one can argue about the mechanisms of state change. Whether they require inhibition. If synapses should be modeled as weights or oscillators.  It might come down to the fact that messages passed between neurons or stimuli are not important.  What is important is that change in the internal state of the neuron is detected.  This fact influences the design of ANN models.  For example functionally sensory neurons can be treated the same as cortical or peripheral neurons.  They are all detectors.  In ANNs this would translate to input and hidden layer neurons having the same detection mechanism.
 
-<EDIT - explain or simplify this buisness with 3 observers - analogy with neurons>
-Why detection?  What about other mechanisms?  Can the second observer after its state has been modified by the first go on to modify the third observer state proportionally to it's own state change?  Why does the second observer need to detect it's own state change?  Can it continuously change the third observer's state?  Similar to analog electronics where for most components changing its input changes its output.  This approach is used in analog computing which is also not symbolic in nature.  However this approach leads to continual expansion of energy.  Detection mechanism is a biological approach to minimize energy consumption.  According to Rashevsky, "for a set of prescribed biological functions an organism has the optimal possible design with respect to economy of material used, and energy expenditure, needed for the performance of the prescribed function." [7]
+<EDIT - explain by analogy with neurons>
+Why detection?  Why does the observer need to detect it's own state change?  What about other mechanisms?  Can an observer after its state has been modified go on to continuously modify another observer's state proportionally to it's own state change?  Similar to analog electronics where for many components changing its input changes its output continuously.  This approach is used in analog computing which is also not symbolic in nature.  However this approach leads to continuous expansion of energy.  Detection mechanism is also a biological approach to minimizing energy consumption.  According to Rashevsky, "for a set of prescribed biological functions an organism has the optimal possible design with respect to economy of material used, and energy expenditure, needed for the performance of the prescribed function." [7]
 
-It takes energy to change state. This energy should not be expanded unless the second observer's state in the previous example has changed. Otherwise by expanding this energy second observer changes it's own state nondeterministically.  However a system needs to react to external stimuli and not just it's unit's random internal state changes.  Also second observer needs to reset it's state in such a way that when it's state is changed again, the net change can be detected.
+It takes energy to change state. This energy should not be expanded unless the observer's state in the previous example has changed. Otherwise by expanding this energy the observer changes it's own state nondeterministically.  However a system needs to react to external stimuli and not just it's unit's random internal state changes.  In addition, the observer needs to reset it's state in such a way that when it's state is changed again, the net change can be detected.
 
 
 On the importance of time in physics and engineering:
-In classical physics one wants to describe the world in terms of functions.  For example in an experiment where a ball is moving left and right on a track the ball's position can be described as a function of time f(t).  This description breaks down when something unaccounted for happens.  For example the ball is picked up and later placed back on the track.  This action can be defined as a discontinuity in f(t).  The discontinuity can be described in terms of the time interval because math describes the world in an instance of time or as a function of time.
+In classical physics one wants to describe the world in terms of functions.  For example in an experiment where a ball is moving left and right on a track the ball's position can be described as a function of time f(t).  This description breaks down when something unaccounted for happens.  For example the ball is picked up and later placed back on the track.  This action can be defined as a discontinuity in f(t).  The discontinuity can be described in terms of the time interval because math describes the world in an instance of time as a function of time.
 
 In Engineering non-linear processes are often modeled by linear functions on some intervals.  The function can be chosen by an engineer or fitted by linear regression.  When linear approximation is used for a function of time, a time interval during which it is valid has to be defined.  This is similar to subsumption architecture in robotics where state machines describing non-linear behavior become valid during some periods of time.  Describing everything in a system in terms of time (perception/ internal representations /actions) fits well with techniques described above.
 
 
 Digital Signal Processing (DSP), probability and statistics:
-How do you turn continuous into discrete?  Sample it at even time intervals to produce time series or detect changes in the signal and record the amplitude and time of the change.  As speed of an ADC converter increases, amplitude changes take on a set {-1,0,1} due to the limited resolution of sensors.  This fact is exploited in "One-bit Audio" encoding.
+How do you turn continuous into discrete?  Sample it at even time intervals to produce time series.  An alternative is to detect changes in the signal and record the amplitude and time of the change.  As speed of an ADC converter increases, amplitude changes from previous value take on a set {-1,0,1} due to the limits of sensor resolution.  This fact is exploited in "One-bit Audio" encoding.
 <ADD - continue the thought>
 
-Sampling a random process at an arbitrary frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data.  For example a sensor sampling brightness 100 times per second produces 8,640,000 samples in 24 hours. This is excessive if the goal is to figure out whether it is night or day.
+Sampling a random process at an arbitrary frequency does not guarantee exceeding Nyquist frequency of a real world phenomenon. Oversampling at the maximum sensor frequency produces excessive amounts of data.  For example a sensor sampling brightness 30 times per second produces 2,592,000 samples in 24 hours. This is excessive if the goal is to figure out whether it is night or day.
 
-Observing the signal via multiple observers that detect changes instead of sampling is a better model that uses the mechanism of perception.  For example, observer1 detects a change in one unit. Observer2 detects a change in two units and so on.  Given noise is not a problem, detecting changes produces the optimal sample rate to capture the signal.  Detecting signal changes after noise is filtered out guarantees to capture information needed to reproduce the signal.  Detection mechanism does not suffer from sampling below Nyquist frequency.
+Observing the signal via multiple observers that detect changes instead of sampling is a better model that uses the mechanism of perception.  For example, observer1 detects a change in one unit from an absolute.  Observer2 detects a change in two units and so on.  When noise is filtered out, detecting changes produces the optimal rate to capture the signal.  Detecting signal changes guarantees to capture information needed to reproduce the signal.  Detection mechanism does not suffer from sampling below Nyquist frequency.
 
-In DSP, random variables (random processes) such as phase, amplitude and frequency are sometimes defined a priori.  Transmitter manipulates these variables creating a signal.  Frequency is a known random variable when designing filters.
+##################################################################
+In DSP, random variables (random processes) such as phase, amplitude and frequency are sometimes defined a priori.  Transmitter manipulates these variables creating a signal.  For example frequency is a known random variable when designing filters.
+< find random variables hidden in a signal automatically >
 
 <EDIT>
 Relative frequency of occurrence of event is a measure of the probability. <REFERENCE> How does one go from observing a continuous random process to an event?  How does one construct an experiment automatically?  In statistics mechanism of perception can be used to runs statistical experiments.  It allows one to go from observing continuous random processes in real world to producing outcomes of an experiment. Every time a change is detected, it produces an outcome.
@@ -97,18 +100,21 @@ Imagine you are observing a toss of a fair coin in the air. There are several ra
 f(t) is the height of the coin in inches
 g(t) is the height of the coin in meters
 h(t) is the angle of the coin relative to horizon in degrees
+e(t) is the kinetic or potential energy of the coin
 how does one create an experiment to check if the coin is fair? First one needs to pick values of the random processes that define an outcome of the experiment. Lets say f(t) = 0, g(t) = 0 and h(t) = 0.  In addition one needs to pick times t1, t2, t3, etc at which these random variables are realized.
 
-<EDIT>
-At this point importance of embodiment has to be mentioned.  Embodiment allows modifying experiments instead of just observing them. For example Bertrand paradox exists because a method of selection/realization/observation influences the distribution of the random variable.  Another example is a coin laying on the road.  Cars are passing over it and push the coin around but it does not flip.  It always lays on one side.  Observing this experiment will not tell you this is a fair coin.
+<EDIT - NEW!!!>
+Detecting changes in the environment observes events.  Detecting produces an outcome in an experiment where as sampling does not. Frequentist probability is defined in terms of events.  Not all samples correspond to an event.  For example distribution of a random variable will depend on the frequency of sampling.  Detection of changes in the environment defines possible outcomes of an experiment.  if it can not be detected, it can not become an outcome in the experiment.
+Detecting a change in a continuous random process produces an experiment outcome whereas sampling it does not.  This is because in case of sampling, the sample rate can change, changing the statistics.  For different observers observing the same events the experiments will be different. This is how it is in the real world. For example dogs can not see colors whereas we can.
 
-<talk about avoiding combinatorial explosion through use of time>
-<DELETE>
-Data without a time component produces combinatorial explosion. Having time reduces the number of possible combination of random variable realizations.
+Random variable realization is not necessary an experiment outcome.
+################################################################
 
-<talk about causality and time vs correlation>
-<DELETE>
-Data may exhibit correlation without causality.  Causality on the other side will express itself as correlation in data from different time intervals.  To avoid an inverse error one needs to specify that correlation of data from different time intervals does not imply causality.  In order to reason this way one needs to establish time intervals.  This is easier done when information is expressed in terms of time as in a point process.
+At this point importance of embodiment has to be mentioned.  Embodiment allows modifying experiments instead of just observing them. For example Bertrand paradox exists because a method of selection/realization/observation influences the distribution of the random variable.<REFERENCE>  Another example is a coin laying on the road.  Cars are passing over it and push the coin around but it does not flip.  It always lays on one side.  Observing this experiment will not tell you this is a fair coin.  Embodiment allows modifying the statistical experiment.
+
+When working with data researchers often face combinatorial explosion.  Having time component might allow reduction in the number of possible combinations of random variable realizations.
+
+Data may exhibit correlation without causality.  Causality on the other side will express itself as correlation in data from different time intervals.  To avoid an inverse error one needs to specify that correlation of data from different time intervals does not imply causality.  In order to reason about causality one needs to establish the notion of time in the reasoning framework.  This is easier done when information is expressed in terms of time as for example in a single dimentional point process with time labeling the axis.
 
 
 Conclusion:
@@ -152,3 +158,5 @@ Assumption that state can describe perception is a result of the state-oriented 
 Brightness of a pixel (red 34) VS one pixel is brighter than the other.  Which carries more information?
 
 What action should I perform right now? And should I perform a specific action right now?  Both approaches use all available up to now information.
+
+Perception converts a continuous random process into a point process.

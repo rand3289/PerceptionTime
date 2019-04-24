@@ -1,7 +1,7 @@
 ﻿Perception and time in Artificial General Intelligence.
 Andrey Makushkin
 toandrey@yahoo.com
-April 12, 2019
+April 24, 2019
 
 
 Summary:
@@ -35,7 +35,7 @@ Numbers are projections of real-world phenomena onto an axis.  They are Plato's 
 
 Whenever a change occurs it has to be described in terms of time.  For example, a drop in temperature freezes the lake, not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. It does not tell us how long.  Only the fact that temperature is changing can describe that the state of the lake is changing.
 
-Time instance is the smallest quanta of information yet since time is continuous its resolution is limited only by an observer's precision.  Detecting a change is much more precise in time than sampling.  While sampling, the change could occur anywhere within the time period.  There is another side effect of using a detection mechanism.  Detecting a change will most of the time result in a constant delay.  Similar to the propagation of the information about an event through the environment.  These delays can be exploited by some mechanisms, for example, when locating a source of sound.  Similarly, delays introduced during detection can be exploited by other mechanisms.  Mercury delay lines were used in the early days of electronics to create computer memory.
+Time instance is the smallest quanta of information yet since time is continuous its resolution is limited only by an observer's precision.  Detecting a change is much more precise in time than sampling.  While sampling, the change could occur anywhere within the time period.  There is another side effect of using a detection mechanism.  Detecting a change will result in low jitter and therefore a constant delay while it propagates through the system from an observer to another observer.  Similar to the propagation of the information about an event through the environment.  These delays can be exploited by some mechanisms, for example, when locating a source of sound.  Mercury delay lines were used in the early days of electronics to create computer memory.
 
 
 Perception in Artificial Intelligence (AI):
@@ -82,37 +82,13 @@ Sampling a random process at an arbitrary frequency does not guarantee exceeding
 
 Observing the signal via multiple observers that detect changes instead of sampling is a better model that uses the mechanism of perception.  For example, observer1 detects a change in one unit from an absolute.  Observer2 detects a change in two units and so on.  When noise is filtered out, the approach of detecting the changes produces the optimal rate for capturing the signal.  Detecting signal changes guarantees to capture the information needed to reproduce the signal.  Detection mechanism does not suffer from sampling below Nyquist frequency.
 
-##################################################################
-In DSP, random variables (random processes) such as phase, amplitude and frequency are sometimes defined a priori.  Transmitter manipulates these variables creating a signal.  For example, frequency is a known random variable when designing filters.
-< find random variables hidden in a signal automatically >
+In DSP, random variables (random processes) such as phase, amplitude and frequency are sometimes defined a priori.  Transmitter manipulates these variables creating a signal.  Whereas frequency is a known random variable when designing filters.  It is easy to fall into a trap thinking that using these random variables in any signal will provide some inside into the information content.  Others try to use statistical properties of the signal such as mean, median, deviation, distribution to gain insight.  The problem with this approach is that any complex signal is a composition of multiple random variables.  Without knowing all of them, it is impossible to understand how one of them contributes to the statistics of the signal.
 
-<EDIT>
-Relative frequency of occurrence of an event is a measure of the probability. <REFERENCE> How does one go from observing a continuous random process to an event?  How does one construct an experiment automatically?  In statistics mechanism of perception can be used to runs statistical experiments.  It allows one to go from observing continuous random processes in the real world to producing outcomes of an experiment. Every time a change is detected, it produces an outcome.
+There is an alternative approach of creating statistical experiments to extract information.  The problem is, how does one construct an experiment automatically?  How does one go from observing a continuous random process to an event?  The mechanism of perception can be used to define and runs statistical experiments.  Detecting a change in a signal <continuous random process> produces an experiment outcome whereas sampling it does not.  This is because in the case of sampling, the sample rate can change, changing the statistics.  The concept of feature binding helps define the boundaries of the experiment.  For different observers observing the same events, the experiments will be different.  This is how perception works in the real world.  For example, dogs cannot see colors whereas we can.
 
-<EDIT>
-Perceiving any continuous random process will yield discrete time observations /realizations / discrete mappings to a set of outcomes.
-Each observer...<blah>... a member in a set.  The set is defined for a short time period within the window of an experiment.
+At this point importance of an ability to actuate and embodiment has to be mentioned.  It enables modification of statistical experiments in addition to observing them.  <EDIT> For example, Bertrand paradox exists because a method of selection/realization/observation influences the distribution of the random variable.<REFERENCE>  Another example is a coin laying on the road.  Cars are passing over it and push the coin around but it does not flip.  It always lays on one side.  Observing this experiment will not tell you this is a fair coin.
 
-<EDIT>
-Perception mechanism bridges observation of random processes (random variables dependent on time) and statistical experiments.  Detection triggers the start of a new experiment. as well as defines it (feature binding concept helps define the boundaries of the experiment (set of random variables) Detection described in terms of point processes form a set of possible outcomes.
-
-Imagine you are observing a toss of a fair coin in the air. There are several random processes that can be observed for example:
-f(t) is the height of the coin in inches
-g(t) is the height of the coin in meters
-h(t) is the angle of the coin relative to horizon in degrees
-e(t) is the kinetic or potential energy of the coin
-how does one create an experiment to check if the coin is fair? First one needs to pick values of the random processes that define an outcome of the experiment. Let's say f(t) = 0, g(t) = 0 and h(t) = 0.  In addition, one needs to pick times t1, t2, t3, etc at which these random variables are realized.
-
-<EDIT - NEW!!!>
-Detecting changes in the environment observes events.  Detecting produces an outcome in an experiment whereas sampling does not. Frequentist probability is defined in terms of events.  Not all samples correspond to an event.  For example, the distribution of a random variable will depend on the frequency of sampling.  Detection of changes in the environment defines possible outcomes of an experiment.  if it cannot be detected, it cannot become an outcome in the experiment.
-Detecting a change in a continuous random process produces an experiment outcome whereas sampling it does not.  This is because in the case of sampling, the sample rate can change, changing the statistics.  For different observers observing the same events, the experiments will be different. This is how it is in the real world. For example, dogs cannot see colors whereas we can.
-
-Random variable realization is not necessary an experiment outcome.
-################################################################
-
-At this point importance of embodiment has to be mentioned.  Embodiment enables modification of statistical experiments in addition to observing them.  <EDIT> For example, Bertrand paradox exists because a method of selection/realization/observation influences the distribution of the random variable.<REFERENCE>  Another example is a coin laying on the road.  Cars are passing over it and push the coin around but it does not flip.  It always lays on one side.  Observing this experiment will not tell you this is a fair coin.
-
-When working with data researchers often face combinatorial explosion.  Having a time component might aid reduction in the number of possible combinations of random variable realizations.
+When working with data, researchers often face combinatorial explosion.  Having a time component helps reduce the number of possible combinations of random variable realizations.
 
 Data may exhibit a correlation without causality.  Causality on the other side will express itself as a correlation in data from different time intervals.  To avoid an inverse error one needs to specify that correlation of data from different time intervals does not imply causality.  In order to reason about causality, one needs to establish the notion of time in the reasoning framework.  This is easier done when information is expressed in terms of time as for example in a single dimensional point process with time labeling the axis.
 
@@ -132,7 +108,8 @@ References:
 
 <EDIT - change ted and Wikipedia links to links to papers>
 
-############### Should this info be included in the paper?  As an appendix? #######################
+
+############### Should any of this info be included in the paper?  (As an appendix?) #######################
 My speculation is that algorithms required to build an Intelligent system using ANNs would describe (A) how an individual neuron operates (detection/threshold and internal state change mechanism) (B) how neurons interconnect into groups such as cortical columns (C) how these groups are connected to each other, which might be a genetic algorithm responsible for reflexes.
 
 Compare apples to oranges:
@@ -159,4 +136,14 @@ The brightness of a pixel (red 34) VS one pixel is brighter than the other.  Whi
 
 What action should I perform right now? And should I perform a specific action right now?  Both approaches use all available up to now information.
 
+
+################# statistics related ###############################################
+Detection of changes in the environment defines all possible outcomes of an experiment.  if it cannot be detected, it cannot become an outcome in the experiment.
+Random variable realization is not necessarily an experiment outcome.
+Relative frequency of occurrence of an event is a measure of the probability. <REFERENCE> 
+Frequentist probability is defined in terms of events.
+find random variables hidden in a signal automatically
+Perceiving any continuous random process will yield discrete time observations /realizations / discrete mappings to a set of outcomes.
+Each observer...<blah>... a member in a set.  The set is defined for a short time period within the window of an experiment.
+Detection described in terms of point processes form a set of possible outcomes.
 Perception converts a continuous random process into a point process.

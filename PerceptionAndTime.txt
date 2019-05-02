@@ -31,7 +31,7 @@ Any observer cannot directly measure the state of an object such as its color or
 
 Before proceeding to explain how perception relates to Artificial Intelligence, let's review some historical views on perception. The first well-known models of perception are Plato's theory of forms and his "Allegory of the Cave".  His theory is about 1500 years old and withstood the test of time.  Plato describes objects being perceived as shadows without ever knowing their true form.  He also adds that a true philosopher thinks in terms of forms.
 
-Numbers are projections of real-world phenomena onto an axis.  They are Plato's shadows.  Every time a measurement is made, a shadow is produced.  The alternatives are Plato's forms.  Forms cannot be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which cannot be expressed symbolically.  Qualia is a perception of a form.
+Numbers are projections of real-world phenomena onto an axis.  They are Plato's shadows.  Every time a measurement is made, a shadow is produced.  The alternatives are Plato's forms.  Forms cannot be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which cannot be expressed symbolically.  Qualia is a perception of a form.  Biological neurons detect Plato's forms.
 
 Whenever a change occurs it has to be described in terms of time.  For example, a drop in temperature freezes the lake, not the cold itself.  The fact that it's cold can tell us about the state of the lake being frozen. It does not tell us how long.  Only the fact that temperature is changing can describe that the state of the lake is changing.
 
@@ -52,13 +52,11 @@ If you train a supervised learning algorithm to give you a prediction one day in
 
 
 Neurology:
-A hypothesis that brain is required for mobility is given to us courtesy of the sea squirt.  It turns out every voluntary answer your brain gives to any question involves muscle movements.[3]  A muscle fiber only needs to know if it has to contract right now.  The only question then becomes is "when should I twitch that muscle fiber?"  The answer is always "NOW", given at the right time.  Now is also the best answer.  All information available before right now is taken into account.  Answering by providing a specific time or a condition that has to occur in the future runs a risk that new information will become available and a decision will no longer be optimal.
+A hypothesis that brain is required for mobility is given to us courtesy of the sea squirt.  It turns out every voluntary answer your brain gives to any question involves muscle movements.[3]  A muscle fiber only needs to know if it has to contract right now.  The only question then becomes is "when should I twitch that muscle fiber?"  The answer is always "NOW", given at the right time.  Now is also the best answer.  All information available before right now is taken into account.  Answering by providing a specific time or a condition that has to occur in the future runs a risk that new information will become available and a decision will no longer be optimal.  This proves the importance of perception in terms of time.
 
-<EDIT> It proves the importantce of perception in terms of time.
+In biological NNs over two hundred neurotransmitters are found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons.  Current theories do not address this variety of messages processed by biological neurons.  In neurology, mechanisms of changing the internal state of a neuron are many and variable.  Neuron's membrane potential can be changed by photons, chemical, electrical or mechanical means.  Sometimes indirectly through the flow of sodium and potassium ions across a membrane.  Mechanisms can be inhibiting or exciting.  These mechanisms are important but are not common to all types of cells.  The common principle is the detection of internal state change.  How detection works also varies.  Adaptation indicates detection thresholds are not constant.[10]  On the other hand, pain neuronal pathways are not learned and  pain receptors do not become less sensitive over short time.[9]
 
-In biological NNs over two hundred neurotransmitters are found. If an analogy with ANN is drawn, over two hundred different messages or symbols can be sent or received by neurons.  Current theories do not address this variety of messages processed by biological neurons.  In neurology, mechanisms of changing the internal state of a neuron are many and variable.  Neuron's membrane potential can be changed by photons, chemical, electrical or mechanical means.  Sometimes indirectly through the flow of sodium and potassium ions across a membrane.  Mechanisms can be inhibiting or exciting.  These mechanisms are important but are not common to all types of cells.  The common principle is the detection of internal state change.  How detection works also varies.  Adaptation indicates detection thresholds are not constant.  On the other hand pain receptors and neuronal pathways are not learned and do not change over time.[9]
-
-Once the mechanism of perception is accepted, one can argue about the mechanisms of state change. Whether they require inhibition. If synapses should be modeled as weights or oscillators.  It might come down to the fact that messages passed between neurons or stimuli are not important.  What is important is that change in the internal state of the neuron is detected.  As a result, functionality of sensory neurons can be treated the same as cortical or peripheral neurons.  They are all change detectors.  <EDIT> Biological neurons detect Plato's forms.  In ANNs this would translate to input and hidden layer neurons having the same detection mechanism.
+Once the mechanism of perception is accepted, one can argue about the mechanisms of state change. Whether they require inhibition. If synapses should be modeled as weights or oscillators.  It might come down to the fact that messages passed between neurons or stimuli are not important.  What is important is that change in the internal state of the neuron is detected.  As a result, functionality of sensory neurons can be treated the same as cortical or peripheral neurons.  They are all change detectors.  In ANNs this would translate to input and hidden layer neurons having the same detection mechanism.  Analogous, in spiking NNs, spikes are not important.  They are simply representations of the detector's output.
 
 Why detection?  Why does the observer need to detect its own state change?  What about other mechanisms?  Can an observer after its state has been modified go on to continuously modify another observer's state proportionally to its own state change?  Similar to analog electronics where for many components changing its input changes its output continuously.  This approach is used in analog computing which is also not symbolic in nature.  However, this approach leads to a continuous expansion of energy.  The detection mechanism is also a biological approach to minimizing energy consumption.  According to Rashevsky, "for a set of prescribed biological functions an organism has the optimal possible design with respect to economy of material used, and energy expenditure, needed for the performance of the prescribed function." [7]
 
@@ -90,7 +88,7 @@ Data may exhibit a correlation without causality.  Causality on the other side w
 
 
 Conclusion:
-The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, BEAM robotics, the study of coupled oscillators and point processes.  It is just as important to revisit and reconsider classic research with this new outlook on perception to find what was missed and correct assumptions.
+The future directions of research aligned with my view on perception include neuromorphic computing, reservoir computing, spiking ANNs, BEAM robotics, the study of coupled oscillators and point processes.  It is just as important to revisit and reconsider classic research with this new outlook on perception to find what was missed and correct the assumptions.  Turn AI into AGI.
 
 
 References:
@@ -100,11 +98,12 @@ References:
 [4] https://en.wikipedia.org/wiki/Point_process
 [5] https://en.wikipedia.org/wiki/Quantification_(science)
 [6] https://en.wikipedia.org/wiki/Symbol_grounding_problem
-[7] N. Rashevsky, Principle of Optimal Design
+[7] Rashevsky, N., 1960. Mathematical Biophysics: Physico-Mathematical Foundations of Biology, vol. 2, p. 292
 [8] https://en.wikipedia.org/wiki/Bertrand_paradox_(probability)
-[9] <EDIT: insert reference to pain receptors do not have adaptation mechanism>
+[9] http://www.newworldencyclopedia.org/entry/Pain
+[10] https://en.wikipedia.org/wiki/Neural_adaptation
 
-<EDIT - change ted and Wikipedia links to links to papers>
+TODO: change Wikipedia and ted.com links to links to papers
 
 
 ############### Should any of this info be included in the paper?  (As an appendix?) #######################
@@ -117,10 +116,11 @@ Detection is a way of thinking about the mechanism of perception.  One of its fo
 Why consider detection mechanism? Assuming this model, creates a framework for an exhaustive search for rules of state modification. 
 Algorithm of changing state changes itself over time. Synapses change over time.  Habituation gives us a hint that the detection algorithm can also change over time. How does the environment influence the change mechanism?   Why is there an inhibiting mechanism?
 
+The assumption that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view, a change in a process can be described by when it occurred as opposed to how the state changed.
+
 A thermostat can detect a change in temperature.  It can make my AC actuate.  Does it perceive the change?
 
-A function terminates, twitch the muscle
-How does this whole thing relate to lambda calculus?
+As a function terminates, twitch the muscle.  How does this relate to lambda calculus?
 
 Manchester encoding adds observer clock synchronization to symbols used to communicate.
 
@@ -128,19 +128,18 @@ Machine learning deals with data bypassing perception
 
 One cannot detect what he or she does not know.
 
-The assumption that state can describe perception is a result of the state-oriented view of the world as opposed to process-oriented. In the process-oriented view, a change in a process can be described by when it occurred as opposed to how the state changed.
-
 The brightness of a pixel (red 34) VS one pixel is brighter than the other.  Which carries more information?
 
 What action should I perform right now? And should I perform a specific action right now?  Both approaches use all available up to now information.
 
 ################# statistics ##################################
-Detection of changes in the environment defines all possible outcomes of an experiment.  if it cannot be detected, it cannot become an outcome in the experiment.
+Relative frequency of occurrence of an event is a measure of the probability in the frequentist interpretation.
+find random variables hidden in a signal automatically ( reducing the dimentionality of the data? )
+
 Random variable realization is not necessarily an experiment outcome.
-Relative frequency of occurrence of an event is a measure of the probability.
-Frequentist probability is defined in terms of events.
-find random variables hidden in a signal automatically
-Perceiving any continuous random process will yield discrete time observations /realizations / discrete mappings to a set of outcomes.
+Detection of changes <in the environment?> defines all possible outcomes of an experiment.
+If it cannot be detected, it cannot become an outcome in the experiment.
+Perceiving any continuous random process will yield discrete time observations - discrete mappings to a set of outcomes.
 Each observer detects an outcome in an experiment.  The set of outcomes is defined for a short time period within the window of an experiment.
 Detection described in terms of point processes form a set of possible outcomes.
 Perception converts a continuous random process into a point process.

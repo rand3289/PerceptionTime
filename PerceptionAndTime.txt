@@ -5,7 +5,7 @@ May 22, 2019
 
 
 Summary:
-Intelligence is an emergent behavior attributed to entities possessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habituation, prediction, reflexes, embodiment, actuation and many other.  Perception is considered the most important mechanism by many researchers.[1][2]
+Intelligence is an emergent behavior attributed to entities possessing mechanisms such as perception, short and long term memory, ability to learn or forget, attention, habituation, reasoning, prediction, reflexes, embodiment, actuation and many other.  Perception is considered the most important mechanism by many researchers.[1][2]
 
 In traditional computing, data is received or acquired and transformed by computers.  The output of these computations is interpreted or perceived by humans.  If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by system designers.  When building Artificial General Intelligence (AGI) our goal is to move this perception boundary inside the system.
 
@@ -156,3 +156,17 @@ Perceiving any continuous random process will yield discrete time observations -
 Each observer detects an outcome in an experiment.  The set of outcomes is defined for a short time period within the window of an experiment.
 Detection described in terms of point processes form a set of possible outcomes.
 Perception converts a continuous random process into a point process.
+
+#################################################################
+light year
+the goal of this paper is to steer AGI research
+Plato 380 BC ???
+only changes can be detected
+Signal detection theory
+definition for detection https://en.wikipedia.org/wiki/Detection
+definition for state ???
+definition for cognition ???
+
+poznanie v filosofii (epistemology/gnosiology) vs cognition in philosophy
+perception is different from cognition!!!
+describe perception vs sensory perseption: mechanism of perception is prevalent in the Central nervous system as well as in the peripheral nervous system.

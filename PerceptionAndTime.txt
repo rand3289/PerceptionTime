@@ -44,7 +44,9 @@ First memorable mention of perception in AI has to be attributed to Frank Rosenb
 Whereas Rosenblatt wanted his perceptrons to detect the forms, nowadays we have a more generic word for mechanisms of perception to detect forms.  They are called features.  A feature is a mechanism of perception.  Features can be detected by current computation models and even used in a generative mode to create pictures.  Features can be used in a generative mode because they embed information into its definition.  Feature's importance as a mechanism of perception that can make real-world observations in terms of time is not well-known.
 
 Are features the answer to perception?  It depends on your point of view.  In many current models feature detection or absence is represented by symbols 1 and 0.  Some researchers think about these models of ANNs as symbolic in nature where symbols 0 or 1 are used to "communicate" among neurons.
- The problem with this point of view is the "Symbol Grounding Problem".[D3]  "Symbol Grounding Problem" should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in its computation model.  Zeros and Ones used in ANNs are not symbols.  They are flags representing short intervals of time.  There are problems with this way of representing time.  Some of the problems are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  The important thing is to agree they represent time.  By doing so they avoid the "Symbol Grounding Problem" inherent in symbolic systems. <EDIT: add difference from computationism>
+ The problem with this point of view is the "Symbol Grounding Problem".[D3]  "Symbol Grounding Problem" should not be just a red flag for symbolic AI but a red brick wall for any approach that uses state in its computation model.  Zeros and Ones used in ANNs are not symbols.  They represent time.  There are problems with this way of representing time.  Some of the problems are described in "Finding Structure In Time" paper by Jeffrey L. Elman.  The important thing is to agree they represent time.  Since no symbol transmission takes place, connectionism avoids the "Symbol Grounding Problem" inherent in symbolic systems.
+
+However things are more complex than that.  One and zero could represent an interval of time or a point in time.  If you accept the above definition of perception, then ones and zeros represet points in time.  Points in time at which change was detected.  This has serious implication as widens the boundary between computationalism and connectionism.  One of the arguments used to show equivalence of the two theories for the past seventy years was that "neural events and the relations among them can be treated by means of propositional logic".[7]  Whereas one could argue that overlapping intervals of time could be connected via propositional logic operators, points in time require temporal logic.  Since observers are not synchronized in time, probability that events are detected at exectly the same time tends to zero.  Since the points can be a millisecond or a million years apart, temporal logic is required to reason about them.
 
 Another ANN related fact that underlines the importance of the time aspect of the computational models is the success of LSTM algorithm.  Its success can be attributed to a clever timing mechanism that makes it stand out among other recurrent ANNs.  The mechanism facilitates processing of stimuli from time intervals far apart.
 
@@ -111,9 +113,10 @@ References:
 [5] http://www.newworldencyclopedia.org/entry/Pain
 [6] M. Favero, G. Busetto, A. Cangiano (2012). "Spike timing plays a key role in synapse elimination at the neuromuscular junction"
 PNAS, DOI 10.1073/pnas.1201147109
+[7] W.S. McCulloch, W. Pitts, (1943). A Logical Calculus of the Ideas Immanent in Nervous Activity. Bulletin of Methematical Biophysics, Vol. 5 pp. 115-133
 
 
-TODO: change ted.com link to paper link
+<EDIT: change ted.com link to paper link>
 
 ############### Should any of this info be included in the paper?  (As an appendix?) #######################
 Compare apples to oranges:
@@ -148,9 +151,8 @@ It's easier to control a process if a control system is able to take into accoun
 ################# statistics ##################################
 Relative frequency of occurrence of an event is a measure of the probability in the frequentist interpretation.
 find random variables hidden in a signal automatically ( reducing the dimensionality of the data? )
-
 Random variable realization is not necessarily an experiment outcome.
-Detection of changes <in the environment?> defines all possible outcomes of an experiment.
+Detection of changes in the environment defines all possible outcomes of an experiment.
 If it cannot be detected, it cannot become an outcome in the experiment.
 Perceiving any continuous random process will yield discrete time observations - discrete mappings to a set of outcomes.
 Each observer detects an outcome in an experiment.  The set of outcomes is defined for a short time period within the window of an experiment.
@@ -166,18 +168,15 @@ Signal detection theory
 definition for detection https://en.wikipedia.org/wiki/Detection
 definition for state ???
 definition for cognition ???
-
 poznanie v filosofii (epistemology/gnosiology) vs cognition in philosophy
 perception is different from cognition!!!
 describe perception vs sensory perseption: mechanism of perception is prevalent in the Central nervous system as well as in the peripheral nervous system.
 
 Mechanism of perception separates life from things which are not alive.  Life has a process within while things are changed by the processes they are a part of.  One exception is radioactive decay.
-#################################################################
-<EDIT: add to introduction>
+
 This gives rise to a misconception where an observer percieves the environment and magically changes it's own internal state accordingly.  In the reality, the environment changes an observer's internal state.  Assume any system we build is modular.  Let's look at each module as an observer.
 Just because they are inside the system, the mechanisms of information sharing among them are not any different.
 
 Embodyment also provides a scale for the system. Without a scale your AI could decide that the only interesting thing worth while is nanotechnology and you can change the whole world one atom at a time.
 
-Non-equivalence of connectionism and computationalism:
-Neuron firing is a process that could be measured as a whole by an interval of time however it has to be separated into two mechanism: "firing and state change process that includes propagation of potential through an axon and synapses.  Neuron firing is defined by a point in time and not intervals in time.  Before neuron fires and after.  Predicate logic can not be used with points in time.  Points require temporal logic.  <DELETE>It could probably be used with intervals by grouping overlapping intervals into statements.
+Neuron firing is a process that could be measured as a whole by an interval of time however it has to be separated into two mechanism: "firing and state change process that includes propagation of potential through an axon and synapses.  Neuron firing is defined by a point in time and not intervals in time.  Before neuron fires and after.

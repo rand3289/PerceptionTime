@@ -1,7 +1,7 @@
 ﻿Perception and time in Artificial General Intelligence.
 Andrey Makushkin
 toandrey@yahoo.com
-May 22, 2019
+June 4, 2019
 
 
 Summary:
@@ -136,17 +136,33 @@ Manchester encoding adds observer clock synchronization to symbols used to commu
 
 Machine learning deals with data bypassing perception
 
-One cannot detect what he or she does not know.
+One cannot detect what he or she does not know. only changes can be detected
+Medium is required to deliver a message.  The fact that new information is received is in itself a change.
 
 The brightness of a pixel (red 34) VS one pixel is brighter than the other.  Which carries more information?
 
 What action should I perform right now? And should I perform a specific action right now?  Both approaches use all available up to now information.
 
-Medium is required to deliver a message.  The fact that new information is received is in itself a change.
-
-Perception is a method of selection.  A method of observation of a random process.  It results in a point process.
-
 It's easier to control a process if a control system is able to take into account or influence derivatives as it occurs in a PID controller.
+
+talk about the light year
+the goal of this paper is to steer AGI research
+Plato 380 BC ???
+Signal detection theory
+definition for detection https://en.wikipedia.org/wiki/Detection
+definition for state ???
+definition for cognition ???
+poznanie v filosofii (epistemology/gnosiology) vs cognition in philosophy
+perception is different from cognition!!!
+
+Mechanism of perception separates life from things which are not alive.  Life has a process within while things are changed by the processes they are a part of.  One exception is radioactive decay.
+
+This gives rise to a misconception where an observer percieves the environment and magically changes it's own internal state accordingly.  In the reality, the environment changes an observer's internal state.  Assume any system we build is modular.  Let's look at each module as an observer.
+Just because they are inside the system, the mechanisms of information sharing among them are not any different.  Describe perception vs sensory perseption: mechanism of perception is prevalent in the Central nervous system as well as in the peripheral nervous system.
+
+Embodyment also provides a scale for the system. Without a scale your AI could decide that the only interesting thing worth while is nanotechnology and you can change the whole world one atom at a time.
+
+Neuron firing is a process that could be measured as a whole by an interval of time however it has to be separated into two mechanism: "firing and state change process that includes propagation of potential through an axon and synapses.  Neuron firing is defined by a point in time and not intervals in time.  Before neuron fires and after.
 
 ################# statistics ##################################
 Relative frequency of occurrence of an event is a measure of the probability in the frequentist interpretation.
@@ -158,25 +174,4 @@ Perceiving any continuous random process will yield discrete time observations -
 Each observer detects an outcome in an experiment.  The set of outcomes is defined for a short time period within the window of an experiment.
 Detection described in terms of point processes form a set of possible outcomes.
 Perception converts a continuous random process into a point process.
-
-#################################################################
-light year
-the goal of this paper is to steer AGI research
-Plato 380 BC ???
-only changes can be detected
-Signal detection theory
-definition for detection https://en.wikipedia.org/wiki/Detection
-definition for state ???
-definition for cognition ???
-poznanie v filosofii (epistemology/gnosiology) vs cognition in philosophy
-perception is different from cognition!!!
-describe perception vs sensory perseption: mechanism of perception is prevalent in the Central nervous system as well as in the peripheral nervous system.
-
-Mechanism of perception separates life from things which are not alive.  Life has a process within while things are changed by the processes they are a part of.  One exception is radioactive decay.
-
-This gives rise to a misconception where an observer percieves the environment and magically changes it's own internal state accordingly.  In the reality, the environment changes an observer's internal state.  Assume any system we build is modular.  Let's look at each module as an observer.
-Just because they are inside the system, the mechanisms of information sharing among them are not any different.
-
-Embodyment also provides a scale for the system. Without a scale your AI could decide that the only interesting thing worth while is nanotechnology and you can change the whole world one atom at a time.
-
-Neuron firing is a process that could be measured as a whole by an interval of time however it has to be separated into two mechanism: "firing and state change process that includes propagation of potential through an axon and synapses.  Neuron firing is defined by a point in time and not intervals in time.  Before neuron fires and after.
+Perception is a method of selection.  A method of observation of a random process.  It results in a point process.

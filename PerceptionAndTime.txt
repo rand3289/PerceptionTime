@@ -1,7 +1,7 @@
 ﻿Perception and time in Artificial General Intelligence.
 Andrey Makushkin
 toandrey@yahoo.com
-June 4, 2019
+July 17, 2019
 
 
 Summary:
@@ -39,9 +39,11 @@ Time instance is the smallest quanta of information yet since time is continuous
 
 There is another side effect of using a detection mechanism.  Detecting a change will result in low jitter and therefore a constant delay while it propagates through the system from an observer to another observer.  Similar to the propagation of the information about an event through the environment.  These delays can be exploited by some mechanisms, for example, when locating a source of sound.  Another example is mercury delay lines which were used in the early days of electronics to create computer memory.
 
+There is one more advantage of using discrete perception related to the notion of causality.  Imagine you have two containers A and B. Container A is being filled by two streams of liquid.  Two more sources of liquid are dripping into container B.  When container A overflows it is impossible to tell which stream caused it to overflow.  When container B overflows, the source of the last drop can be determined.
+
 
 Perception in Artificial Intelligence (AI):
-First memorable mention of perception in AI has to be attributed to Frank Rosenblatt.  In his 1957 paper "The Perceptron A Perceiving And Recognizing Automaton" he puts perception first in the list of "human-like functions". He also references Plato's' forms. "the form of a man seen from any angle"  This reference has been greatly overlooked along with his mention of inhibiting connections not included in the current perceptron definition. He writes about his "Sensory System" which we now call the input layer "any connection may be negative (tending to inhibit)". In addition, Rosenblatt emphasizes the importance of time by dividing perceptrons into two categories: "momentary stimulus perceptrons and temporal pattern perceptrons".
+First memorable mention of perception in AI has to be attributed to Frank Rosenblatt.  In his 1957 paper "The Perceptron A Perceiving And Recognizing Automaton" he puts perception first in the list of "human-like functions". He also references Plato's' forms: "the form of a man seen from any angle".  This reference has been greatly overlooked.  In addition, Rosenblatt emphasizes the importance of time by dividing perceptrons into two categories: "momentary stimulus perceptrons and temporal pattern perceptrons".
 
 Whereas Rosenblatt wanted his perceptrons to detect the forms, nowadays we have a more generic word for mechanisms of perception to detect forms.  They are called features.  A feature is a mechanism of perception.  Features can be detected by current computation models and even used in a generative mode to create pictures.  Features can be used in a generative mode because they embed information into its definition.  Feature's importance as a mechanism of perception that can make real-world observations in terms of time is not well-known.
 

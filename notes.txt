@@ -47,6 +47,9 @@ Embodiment also provides a scale for the system. Without a scale your AI could d
 
 Neuron firing is a process that could be measured as a whole by an interval of time however it has to be separated into two mechanism: "firing and state change process that includes propagation of potential through an axon and synapses.  Neuron firing is defined by a point in time and not intervals in time.  Before neuron fires and after.
 
+For example, modeling artificial neural network (ANN) synapses as oscillators or processes instead of weights.
+If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by system designers.
+
 ################# statistics ##################################
 Relative frequency of occurrence of an event is a measure of the probability in the frequentist interpretation.
 find random variables hidden in a signal automatically ( reducing the dimensionality of the data? )
@@ -58,3 +61,7 @@ Each observer detects an outcome in an experiment.  The set of outcomes is defin
 Detection described in terms of point processes form a set of possible outcomes.
 Perception converts a continuous random process into a point process.
 Perception is a method of selection.  A method of observation of a random process.  It results in a point process.
+
+
+<NOTE1>
+Life can be defined by the presence of an internal process. There are two exceptions. One is radioactive decay where there is an internal process.  The second is freezing and thawing of plants and animals which continue to live.  In this case the environment stops and starts the internal process.

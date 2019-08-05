@@ -1,7 +1,7 @@
 ﻿Perception and time in Artificial General Intelligence.
 Andrey Makushkin
 toandrey@yahoo.com
-July 17, 2019
+August 5, 2019
 
 
 Summary:
@@ -17,15 +17,12 @@ In the fields of AI and AGI, currently accepted definition of perception can be 
 
 Inadequacies of the existing definitions are exposed by the following example.  A rock's internal state can be changed by heating it.  It will have a short term memory of it because it remains hot for some time.  It can have a long term memory of it if that changes its crystalline structure.  Geologists make careers out of studying long term memories of the rocks.  The rock can reflect or absorb light, conduct or insulate electric currents.  It can also actuate by falling as a result of changing its state.  Taking all that complex behavior into account not many will claim that the rock can perceive its environment.  Drawing this analogy, CCD and CMOS sensors which are designed to sense the environment and whose wafers are made from silica are not able to perceive the environment.  On the other hand, many will agree that neurons, biological sensors, are able to perceive their environment.  Therefore a different process takes place inside a neuron.  Just like in the rock, neuron's state (its membrane potential) is changed by external stimuli.  External stimuli constitute sensory stimuli or synaptic potential.  When the membrane potential reaches a certain voltage level, it is detected by the neuron and the neuron fires.   Neuron's detection mechanism is significantly different from the processes occurring in the rock.
 
-This brings us to the following definition.  Perception is a low level mechanism that can be composed to form higher level functions.  It should not be confused with the interpretation mechanism, cognition.  Perception is the detection of an internal state change described in terms of time.  Detection is described by when it has occurred as opposed to how the internal state changed.  In other words, detection of the state change inside the system should not be described by further changing the system state.  This is similar to neurologists modeling neural activity as one dimensional point processes with time labeling the axis vs. sampling the membrane potentials.[D4]
+This brings us to the following definition.  Perception is a low level mechanism that can be composed to form higher level functions.  It should not be confused with the interpretation mechanism, cognition.  Perception is an act of detection of an internal state change described in terms of time.  Detection is described by when it has occurred as opposed to how the internal state changed.  In other words, detection of the state change inside the system should not be described by further changing the system state.  This is similar to neurologists modeling neural activity as one dimensional point processes with time labeling the axis vs. sampling the membrane potentials.[D4]  Any other way of observing the environment results in a symbolic world representation.
 
-The following will describe the detection mechanism in view of different disciplines.  Some of the arguments found here will use an idea of a non-conscious observer borrowed from information theory.[D1]  It will also rely on the notion of an object's state - the information that describes the object.  The author will sometimes refer to an observer's own internal state.  Information that describes the observer and most importantly how that information is changed by its environment.
+Perception should be modeled as a set of interacting point processes.  It is the author's goal to show the reasons for doing so and the advantages by describing the detection mechanism and its relationship with time in view of different disciplines.  Some of the arguments found here will use an idea of a non-conscious observer borrowed from the information theory.[D1]  One deviation from the definition of and observer is that it has a dual nature.  It is a process and an object at the same time.  Detection occurs within this process.  In the example above, processes in the rock were started externally whereas an observer has an internal running process.  It will also rely on the notion of an object's state - the information that describes the object.  The author will sometimes refer to an observer's own internal state.  Information that describes the observer and most importantly how that information is changed by its environment.
 
 
-<EDIT>
-For example, the definition above makes it possible to think about an observer as a process and not just an object.
-For example, modeling artificial neural network (ANN) synapses as oscillators or processes instead of weights.
-If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by system designers.
+<titles for paragraphs: Time, Symbolic Representations, subsystem interactions>
 
 
 Measure, values, numbers, symbols, state, perception and philosophy:
@@ -35,7 +32,9 @@ This leads to a conclusion that although a measure might have a meaning for a si
 
 Before proceeding, let me reference some historical views on perception. The first well-known models of perception are Plato's theory of forms and his "Allegory of the Cave".  Plato describes objects being perceived as shadows without an observer ever knowing their true form.  He also adds that a true philosopher thinks in terms of forms.
 
-Numbers are projections of real-world phenomena onto an axis.  They are Plato's shadows.  Every time a measurement is made, a shadow is produced.  The alternatives are Plato's forms.  Forms cannot be measured, described as a symbol, or transmitted.  Forms can only be detected.  This closely relates to the problem of qualia which cannot be expressed symbolically.  Qualia is a perception of a form.  Biological neurons detect Plato's forms.
+Numbers are projections of real-world phenomena onto an axis.  They are Plato's shadows.  Every time a measurement is made, a shadow is produced.  The alternatives are Plato's forms.  Forms cannot be measured, described as a symbol, or transmitted.  Forms can only be detected.  
+
+This closely relates to the problem of qualia which cannot be expressed symbolically.  Qualia is a process of perception of a form.  Biological neurons detect Plato's forms.
 
 Any observer cannot directly measure the state of some object such as its color or temperature.  It can only observe changes in the environment.  The object of observation does not always need to change.  A change in the medium is sufficient to deliver the information to the observer.  A photon arriving at the retina, hair deflecting in a cochlea, tactile input, molecule locking into a receptor in the nose, they are all events occurring in the sensor's environment.
 
@@ -102,7 +101,7 @@ Data may exhibit a correlation without causality.  Causality on the other side w
 
 
 Conclusion:
-It's important to revisit and reconsider classic research with this new outlook on perception to find what was missed and correct the assumptions.  Contemporary directions of research aligned with this view on perception include neuromorphic computing, reservoir computing, spiking ANNs, BEAM robotics, study of coupled oscillators and study of point processes.
+Contemporary directions of research aligned with this view on perception already include neuromorphic computing, spiking ANNs, BEAM robotics, study of coupled oscillators and study of point processes.  It's important to revisit and reconsider classic research with this new outlook on perception to find what was missed and correct the assumptions.
 
 
 Glossary:

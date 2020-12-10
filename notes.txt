@@ -1,5 +1,33 @@
-﻿
-<EDIT: change ted.com link to paper link>
+﻿These are just some of my notes.  DO NOT read them.  They won't make any sence to you.
+
+#############################################################################################################
+Neural coding:
+
+Imagine you are sampling a signal using an Analog to Digital Converter (ADC).  For example, intensity of a pixel in a Black and White camera at 60fps.  At the time of the first video frame t=0ms the pixel value is 50.  At time of the next frame t=16.6ms the pixel value is 53 and so on as shown in the table below.  Instead of delivering a stream of changes every time a photon strikes the sensor, the hardware is "optimized" to summ up the changes and deliver them as numbers.
+
+time(ms)   value
+0          50      
+16.6       53
+33.3       51
+49.9       51
+66.6       50
+
+Using linear extrapolation, we can rearrange this information as shown in the following table.  Non-linear extrapolation can be used in a more realistic model by utilizing rates of change calculated in prevous steps.
+
+time(ms)   value   rate of change (ms)
+0          50      
+5.5        51      5.5  positive
+11.1       52      5.5  positive
+16.6       53      5.5  positive
+24.9       52      8.3  negative
+33.3       51      16.6 negative
+66.6       50      33.3 negative  (notice sample listed in a previous table at time 49.9 is missing)
+
+At this point, the sequence of pixel values can be expressed as the initial value (50) and a sequence of "rate of change": 5.5+, 11.1+, 16.6+, 24.9-, 33.3-, 66.6-
+Assume that the initial value is not important.  For simplicity's sake, when you turn on the system it's always zero.
+
+Information in this format can be fed as exitatory and inhibitory neural spikes directly into an artificial spiking neural network.
+
 
 ############### Should any of this info be included in the paper?  (As an appendix?) #######################
 Compare apples to oranges:
@@ -50,6 +78,12 @@ Neuron firing is a process that could be measured as a whole by an interval of t
 For example, modeling artificial neural network (ANN) synapses as oscillators or processes instead of weights.
 If a human is out of the loop, it's usually the case where certain output symbols are assigned actions by system designers.
 
+As I state perception is related to qualia as I believe qualia is a perception of a form.  All that's left in order to understand how form is represented in the brain is to show how the brain stores information .  Not an easy task indeed.
+
+is perception like a DTFT from frequency domain into time domain?  Percepts (frequencies) are transformed into a time domain???
+
+As a thought experiment I used to imagine that it's possible to represent processes occurring in the brain as a pinball machine with millions or billions of balls flying around and interacting. Hence I think that it's not important to have a framework for modeling but to find the basic transformations the information undergoes during these processes. And the first question therefore , how is information going to be represented?
+
 ################# statistics ##################################
 Relative frequency of occurrence of an event is a measure of the probability in the frequentist interpretation.
 find random variables hidden in a signal automatically ( reducing the dimensionality of the data? )
@@ -64,4 +98,6 @@ Perception is a method of selection.  A method of observation of a random proces
 
 
 <NOTE1>
-Life can be defined by the presence of an internal process. There are two exceptions. One is radioactive decay where there is an internal process.  The second is freezing and thawing of plants and animals which continue to live.  In this case the environment stops and starts the internal process.
+Life can be defined by the ability to detect the interinal state change and the presence of an internal process. There are exceptions: Radioactive decay where there is an internal process.  Freezing and thawing of plants and animals which continue to live.  In this case the environment stops and starts the internal process.
+
+<EDIT: change ted.com link to paper link>

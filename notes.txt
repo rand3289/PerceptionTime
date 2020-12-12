@@ -26,6 +26,7 @@ time(ms)   value   rate of change (ms)
 At this point, the sequence of pixel values can be expressed as the initial value (50) and a sequence of "rate of change": 5.5+, 11.1+, 16.6+, 24.9-, 33.3-, 66.6-
 Assume that the initial value is not important.  For simplicity's sake, when you turn on the system it's always zero.
 
+What I am proposing is decoupling information from sampling rate of the device (framerate of the camera etc...)
 Information in this format can be fed as exitatory and inhibitory neural spikes directly into an artificial spiking neural network.
 
 

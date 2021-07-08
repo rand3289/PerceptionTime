@@ -25,7 +25,6 @@ The problem faced by systems where modules communicate is that modules have to a
 * I call the mechanism "perception".  There is a lot of controversy around using the word perception.  However it can model the transformation that takes place on the boundary of our bodies as well as information flow deep inside our brains far from sensory neurons.
 * It can be reasoned that detection mechanism is one of the signatures of life. The other being ability to reproduce.
 * Symantics or meaning can be reasoned about by specifying that a change is meaningful for a single observer only.
-* The mechanism can be used in the study of causality.
 
 toandrey(at)yahoo(dot)com  
 April 30, 2021

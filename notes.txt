@@ -103,3 +103,10 @@ Perception is a method of selection.  A method of observation of a random proces
 Life can be defined by the ability to detect the interinal state change and the presence of an internal process. There are exceptions: Radioactive decay where there is an internal process.  Freezing and thawing of plants and animals which continue to live.  In this case the environment stops and starts the internal process.
 
 <EDIT: change ted.com link to paper link>
+
+
+Outside world changes you and you "perceive" this "change within you". This is how perception works.  Green leafs are NOT green themselves! They do not emit green light. They reflect it. However emitted and reflected green light modify your retina the same way.
+
+
+###########################
+Current approaches (except spiking ANNs) suffer from time being a hyperparameter. Time needs to be an implicit part of the system.  We can not feed snapshots of the world into the system and expect interesting behavior in return.

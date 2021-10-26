@@ -110,3 +110,14 @@ Outside world changes you and you "perceive" this "change within you". This is h
 
 ###########################
 Current approaches (except spiking ANNs) suffer from time being a hyperparameter. Time needs to be an implicit part of the system.  We can not feed snapshots of the world into the system and expect interesting behavior in return.
+
+############################
+Since neurons operate on "events" of other neurons by observing changes within, it's possible to say that they perform measurements just like any measurement is an operation performed on multiple events.
+
+##############################
+The fact that early firing neurons inhibit firing of nearby neurons might be significant indication of the fact that spikes are essential mechanisms and computing using intervals of time is not equivalent.
+##############################
+Temporal Pooling Fireside Chat with Jeff Hawkins
+https://youtu.be/dDtwK9JYK94?t=2840
+@47 min he talks about using time
+##############################

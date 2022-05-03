@@ -27,7 +27,7 @@ Measurements are operations performed on two or more events.  A measurement is o
 
 https://en.wikipedia.org/wiki/Event_camera  
 
-Systems that use information theory for modeling communication among "observers/agents/modules" suffer from a serious problem.  Measurements in the form of numbers, levels or symbols are inherently meaningless to other observers.  Observers have to agree on the symbols used for communication prior to communication taking place.  One can even argue that they can be learned.  However you can't always agree on a set of symbols with your environment since processes in your environment can change.  Novel processes can appear at any time.  
+Systems that use information theory for modeling communication among "observers/agents/modules" suffer from a serious problem.  Measurements in the form of numbers, levels or symbols are inherently meaningless to other observers.  Observers have to agree on the symbols used for communication prior to communication taking place.  One can argue that they can be learned.  However you can't always agree on a set of symbols with your environment since processes in your environment can change.  Novel processes can appear at any time.  
 
 
 ### Implications

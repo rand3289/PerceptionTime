@@ -29,10 +29,18 @@ https://en.wikipedia.org/wiki/Event_camera
 
 Systems that use information theory for modeling communication among "observers/agents/modules" suffer from a serious problem.  Measurements in the form of numbers, levels or symbols are inherently meaningless to other observers.  Observers have to agree on the symbols used for communication prior to communication taking place.  One can argue that they can be learned.  However you can't always agree on a set of symbols with your environment since processes in your environment can change.  Novel processes can appear at any time.  
 
+### Examples
+Detection/action mechanism is frequently found in biology in the form of a spike.  Artificial spiking neural networks try to model this behavior.  Researchers claim that SNNs are computationally and energy efficient often missing the point that detection should be treated as the main mechanism for computation.  If my theory is correct, we should put more effort in researching spiking ANNs.  
+
+In electronics a comparator is an example of a detector.  Flash ADCs use a row of comparators that detect changes in their input to convert voltage levels into numbers.  The problem is they also perform sampling.  During sampling only one comparator which detected a change is selected per unit of time.  An ADC output value is an index of that comparator.  The precise time of detection by the selected comparator is lost.  Only a time interval is known.  If sampling frequency is below Nyquist frequency, detections by other comparators are also lost.  
+
+https://en.wikipedia.org/wiki/Comparator  
+https://en.wikipedia.org/wiki/Flash_ADC  
+https://en.wikipedia.org/wiki/Sampling_(signal_processing)  
+https://en.wikipedia.org/wiki/Nyquist_frequency  
 
 ### Implications
 * My goal is to make this mechanism a standard tool in developing AI systems.
-* It can justify why spiking ANNs is the way to go.
 * I call the mechanism "perception".  There is a lot of controversy around using the word perception.  However it can model the transformation that takes place on the boundary of our bodies as well as information flow deep inside our brains far from sensory neurons.
 * Semantics or meaning can be reasoned about by specifying that an internal change is meaningful for an individual observer.
 

@@ -40,11 +40,9 @@ https://en.wikipedia.org/wiki/Sampling_(signal_processing)
 https://en.wikipedia.org/wiki/Nyquist_frequency  
 
 ### Implications
-* My goal is to make this mechanism a standard tool in developing AI systems.
-* I call the mechanism "perception".  There is a lot of controversy around using the word perception.  However it can model the transformation that takes place on the boundary of our bodies as well as information flow deep inside our brains far from sensory neurons.
-* Semantics or meaning can be reasoned about by specifying that an internal change is meaningful for an individual observer.
+I call this mechanism "perception".  There is a lot of controversy around using the word perception.  However it can model the transformation that takes place on the boundary of our bodies as well as information flow deep inside our brains far from sensory neurons.  My goal is to make detection mechanism a standard tool in modeling AI systems. In addition, semantics or meaning can be reasoned about by specifying that an internal change is meaningful for an individual observer.  
 
 
 toandrey(at)yahoo(dot)com  
 document created April 30, 2021  
-last modified May 2, 2022  
+last modified May 8, 2022  

@@ -72,6 +72,14 @@ You might think oh, I will just modify the statespace in the first model, but it
 This is a simple toy example but I argue that unless you use temporal point processes your model will never create a good representation of a phenomenon in the real world.  Unless you use point processes, your statespace has to be able to represent all possible combinations of state of the environment. Which is impossible.  
 
 
+## Conclusion
+Our perception system maps senses from multiple modalities into a point in 3 dimentions of space plus time. Location of a neuron in 3D space plus when it fired.  Since the observers/agents/neurons which are part of our perception system have boundaries, we can enumerate them.  This reduces the dimentionality of the information to two dimentions.  One discrete and one continuous (time).  To describe a single point in multi-dimentional space one needs several numbers or symbols.  One for each dimention.  Therefore using a single symbol is not sufficient when trying to represent multi-modal information.  
+
+When data is created, one of two hacks are used.  Information can be represented as a sequence completely devoid of timing information. Alternatively it can be represented as time series where time is represented in terms of discrete intervals.  When time series is created, information is integrated over a period of time.  This period of time is an arbitrary constant introduced by the designer of the system.  This transformation looses some information.  Furthermore the arbitrary period of time creates side effects.  One side effecct is described in Nyquist theorem.  
+
+When creating a system, think of information in terms of points.  Not data!  Separate the ideas and implementation details.
+
+
 toandrey(at)yahoo(dot)com  
 document created April 30, 2021  
-last modified Nov 17, 2023  
+last modified Nov 30, 2023  

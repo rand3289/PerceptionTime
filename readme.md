@@ -1,3 +1,6 @@
+﻿##TLDR:
+We propose the following abstraction to help think about perception from a point of view of a system operating in an environment.  The system is composed of multiple agents. There are various processes occurring in the environment. An agent can become part of a process.  This results in the process (environment) modifying internal state of an agent.  When this occurs, we say information crosses the boundary between an agent and a process.  The agent can then detect this change within self. Making each agent a change detector.  This change is best described by the time at which it has occurred.  This way all information that crosses the boundary is expressed as points in a continuous time domain.  The agents self-organize within the system to figure out what type of changes they detect.  
+
 ## Summary
 Artificial General Intelligence (AGI) implies a system capable of sensing and manipulating any environment.  The way the environment is sensed has to be independent from the modality and dimentionality of the environment itself.  This transformation has to take place on the border of a system and its environment.  Hence the notion of a boundary between an agent and its environment becomes essential.  
 
@@ -82,4 +85,5 @@ When creating a system, think of information in terms of points.  Not data!  Sep
 
 toandrey(at)yahoo(dot)com  
 document created April 30, 2021  
-last modified Nov 30, 2023  
+last updated June 10, 2025  
+
